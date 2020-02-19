@@ -1,0 +1,13 @@
+模块
+尽量使用小写命名，首字母保持小写，尽量不要用下划线(除非多个单词，且数量不多的情况)
+import decoder
+import html_parser
+类名
+使用驼峰(CamelCase)命名风格，首字母大写，私有类可用一个下划线开头
+class AnimalFarm(Farm):
+函数
+名一律小写，如有多个单词，用下划线隔开
+def run_with_env():
+变量名
+尽量小写, 如有多个单词，用下划线隔开
+全局 大写
