@@ -11,3 +11,18 @@ def run_with_env():
 变量名
 尽量小写, 如有多个单词，用下划线隔开
 全局 大写
+
+
+selenium 工具Katalon
+定位：console中调试
+$x('xpath')
+$(css)
+js的定位：
+document.getElementsByClassName
+$('.time')  ==> .class
+
+npm可以下载chromedriver
+https://github.com/mozilla/geckodriver   下载firefox的驱动
+
+监控 web 性能
+self.driver.execute_script("return JSON.stringify(window.performance.timing)")

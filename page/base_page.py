@@ -16,7 +16,6 @@ class BasePage(object):
 
 
     def find(self, kv):
-        print("=================find===================")
         return self.driver.find_element(*kv)
 
     def find_text(self, text):
