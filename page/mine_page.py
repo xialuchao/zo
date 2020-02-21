@@ -8,7 +8,7 @@ class MinePage(BasePage):
     def click_account(self):
         # / [@class =android.widget.EditText]
         # self.find((MobileBy.XPATH, '//*[@class="android.view.View" and @index="1"]//*[@class="android.view.View" and @index="1"]'))
-
+        pass
         # return self
 
 

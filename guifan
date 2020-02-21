@@ -15,7 +15,7 @@ def run_with_env():
 
 selenium 工具Katalon
 定位：console中调试
-$x('xpath')
+$x('xpath')     $x('//*[contains(text(),"09988")]/../../..')
 $(css)
 js的定位：
 document.getElementsByClassName
@@ -23,6 +23,47 @@ $('.time')  ==> .class
 
 npm可以下载chromedriver
 https://github.com/mozilla/geckodriver   下载firefox的驱动
+chromedriver：
+http://chromedriver.storage.googleapis.com/index.html
+远程驱动：
+http://selenium-release.storage.googleapis.com/index.html
+
 
 监控 web 性能
 self.driver.execute_script("return JSON.stringify(window.performance.timing)")
+
+模式应该为：
+远程linux有一套自动化平台
+
+传统：
+python --> chromedriver --> chrome
+
+远程
+python --> selenium server --> chromedriver --> chrome
+
+grid
+python --> grid hub(类似 STF) --> grid node  selenium server  -->  chromedriver --> chrome
+
+PO:
+selenium po         https://selenium-python.readthedocs.io/
+firefox po          https://github.com/mozilla/PyPOM/tree/master/src/pypom
+-driver封装
+-page封装
+-testcase
+
+用例设计：
+-   注册问题：
+注册难点不是自动化，是数据准备
+使用mock
+不断注册新用户，批量删除
+完全使用测试环境
+
+
+-   登陆问题
+        ocr
+        提高可测性，万能验证码
+        使用cookie
+        使用第三方登陆
+
+-
+

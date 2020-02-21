@@ -6,7 +6,6 @@ from driver.android_driver import AndroidDriver
 
 class BasePage(object):
     def __init__(self):
-        print("=================init_basepage===================")
         self.driver = AndroidDriver.driver
     # @classmethod
     # def get_driver(cls):
