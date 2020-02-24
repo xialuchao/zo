@@ -1,0 +1,24 @@
+一：查看应用冷启动时间
+ adb logcat | grep -i display
+ package=com.zhaoonline.www
+ adb shell pm clear $package
+ adb shell am start  -S -W $package/.view.WelcomeActivityAlias
+ adb shell am start  -S -W $package/.ui.SplashActivity  # 这是赵涌在线的应用
+ adb logcat |grep "Displayed "
+ 02-24 15:24:52.848  1165  1205 I ActivityManager: Displayed com.zhaoonline.www/.ui.SplashActivity: +972ms
+ 02-24 15:24:53.442  1165  1205 I ActivityManager: Displayed com.zhaoonline.www/.ui.MainActivity: +552ms
+
+ 二：录屏
+ ffmpeg安装 https://ffmpeg.org/ffmpeg.html
+ ffmpeg -i SVID_20190703_211522_1.mp4 -r 20 img-%03d.png        每隔200毫秒
+ 拆视频：ffmpeg -i SVID_20190703_211522_1.mp4 -ss 00:00:09.85 -to 00:00:12.70 xueqiu.gif
+
+Android的webview性能：
+电脑上：chrome://inspect
+查看app的性能
+可能会遇到的一些坑
+需要代理
+需要chrome 62版本 高版本在一定情况下会有bug
+找一个默认开启webview debug属性的模拟器，网易mumu就不行，genymotion、as自带的模拟器是可以的
+真机上需要研发配合打开debug开关
+sdk版本要对
