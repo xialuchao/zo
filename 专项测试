@@ -1,3 +1,15 @@
+https://testerhome.com/topics/19410  STF公开课笔记
+
+1.stf
+
+2.jenkins
+添加本地为固定节点
+
+3.创建多配制任务
+
+
+pyenv 切换python版本
+
 一：查看应用冷启动时间
  adb logcat | grep -i display
  package=com.zhaoonline.www
@@ -22,3 +34,22 @@ Android的webview性能：
 找一个默认开启webview debug属性的模拟器，网易mumu就不行，genymotion、as自带的模拟器是可以的
 真机上需要研发配合打开debug开关
 sdk版本要对
+
+app异常：appiumpro：github
+https://github.com/cloudgrey-io/the-app/releases
+弱网：在树莓派上部署ATC网络模拟工具
+崩溃：bugly 线上监控
+地域，dns，机型，通讯方式，运营商（需要靠监控）
+卡顿：1,2查看卡顿情况的
+1.overdraw （过度绘制，开发者的GPU）红色四层嵌套
+2.gpu渲染分析（查看柱状图，刷新时，柱状图到顶，需要工具联合调试）
+3.使用命令查看应用卡顿情况
+    $ adb shell pm list package | grep zhao
+    package:com.zhaoonline.www
+    $ adb shell dumpsys gfxinfo com.zhaoonline.www
+    Applications Graphics Acceleration Info:...
+4.查看数据情况，数据分析：systrace  sdk中的工具
+
+Android 一些sdk等工具下载：https://www.androiddevtools.cn/
+
+

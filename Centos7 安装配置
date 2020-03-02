@@ -1,0 +1,46 @@
+关闭防火墙：systemctl stop firewalld.service
+重启网卡：centos7版本操作命令：systemctl restart network   
+                别的版本命令：service network restart
+查看版本命令：
+    cat /etc/redhat-release
+查看虚拟机IP命令：
+    1、输入命令   ip addr 
+    2、在ens33 中 的inet的值就是ip  如果没有，则查看ens33的网卡配置，命令：
+      vi /etc/sysconfig/network-scripts/ifcfg-ens33
+    3、查看最后一行 ONBOOT=no  默认不启动
+    4、修改为ONBOOT=yes
+    5、输入命令 :wq  保存退出。
+    6、重启网卡，命令： sudo service network restart
+    7、输入命令  ip addr 查看ip
+关闭防火墙及ONBOOT=yes之后，可以ssh
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+docker 安装stf
+1、拉取STF相关镜像
+$  docker pull openstf/stf:latest		 拉取STF镜像
+$  docker pull sorccu/adb:latest 	拉取adb 镜像
+$  docker pull rethinkdb:latest 		拉取rethinkdb 镜像
+$ docker images
+2启动数据库rethinkdb
+$ docker run -d --name rethinkdb -v /srv/rethinkdb:/data --net host rethinkdb rethinkdb --bind all --cache-size 8192 --http-port 8090
+3启动adb service
+$ docker run -d --name adbd --privileged -v /dev/bus/usb:/dev/bus/usb --net host sorccu/adb:latest
+4启动stf
+$ docker run -d --name stf --net host openstf/stf stf local --public-ip 192.168.164.100
+使用 docker ps 即可看到已经启动的镜像
+说明：
+一定要先启动adb和rethinkdb，最后启动STF，否则没有脚本通信和数据库STF启动失败
+想要进入adb：sudo docker exec -it 4b /bin/sh
+使用sh方式，不是bash方式，不然会报错
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+docker安装jenkins
+docker pull jenkins
+最新版：docker pull jenkins/jenkins:lts;  （旧版本很多插件无法安装）
+- 本地创建，让jenkins -v 挂载
+- mkdir -p /var/jenkins_home
+- chown -R 1000 /var/jenkins_home
+
+docker run --name jenkins -p 8080:8080 -p 6080:6080 -p 50000:50000 -v /var/run/docker.sock:/var/run/docker.sock  -v $(which docker):/bin/docker -v /mnt:/mnt -v /var/jenkins_home:/var/jenkins_home  -d jenkins:latest
+
+
+
