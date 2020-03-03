@@ -43,4 +43,18 @@ docker pull jenkins
 docker run --name jenkins -p 8080:8080 -p 6080:6080 -p 50000:50000 -v /var/run/docker.sock:/var/run/docker.sock  -v $(which docker):/bin/docker -v /mnt:/mnt -v /var/jenkins_home:/var/jenkins_home  -d jenkins:latest
 
 
+-----------------------------------------------MAC--------------------------------
+由于挂载本地对应的文件路径和centos不同，需要先新建
+shylocks-MacBook-Pro:~ shylock$ mkdir docker_mount
+shylocks-MacBook-Pro:~ shylock$ cd docker_mount
+shylocks-MacBook-Pro:docker_mount shylock$ ls
+shylocks-MacBook-Pro:docker_mount shylock$ mkdir rethinkdb
+shylocks-MacBook-Pro:docker_mount shylock$ mkdir adb
+shylocks-MacBook-Pro:docker_mount shylock$ pwd
+/Users/shylock/docker_mount
+启动数据库rethinkdb,adb,stf
+docker run -d --name rethinkdb -v /Users/shylock/docker_mount/rethinkdb:/data --net host rethinkdb rethinkdb --bind all --cache-size 8192 --http-port 8090
+docker run -d --name adbd --privileged -v /Users/shylock/docker_mount/adb:/dev/bus/usb --net host sorccu/adb:latest
+docker run -d --name stf --net host openstf/stf stf local --public-ip 192.168.31.142
+
 
