@@ -1,0 +1,13 @@
+
+接口测试工具：
+curl：
+postman：交互很强，不适合自动化，断言
+jmeter：用例管理很难，工具主要是针对性能，jmeter+junit
+soupui：设计不合理
+request：推荐=====》httpbin.org
+httprunner：社区推荐
+
+request:https://requests.readthedocs.io/en/master/
+企业微信：https://work.weixin.qq.com/api/doc/
+request代理：
+requests.get("http://www.zhaoonline.com",proxies={"http":"http://127.0.0.1:8877"},)
