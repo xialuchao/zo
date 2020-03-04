@@ -1,5 +1,6 @@
 
 接口测试工具：
+charles：弱网（崩溃等）
 curl：
 postman：交互很强，不适合自动化，断言
 jmeter：用例管理很难，工具主要是针对性能，jmeter+junit
@@ -11,3 +12,16 @@ request:https://requests.readthedocs.io/en/master/
 企业微信：https://work.weixin.qq.com/api/doc/
 request代理：
 requests.get("http://www.zhaoonline.com",proxies={"http":"http://127.0.0.1:8877"},)
+
+常见的mock系统：
+- rap 淘宝（更新落后）
+- yapi  可视化接口管理：https://github.com/YMFE/yapi
+- moco
+
+swagger 是api全生命周期的解决方案，完善的生态，已经成为标准
+
+hamcrest 断言库
+jsonpath python库
+schema  校验（校验很多信息的时候）
+
+
