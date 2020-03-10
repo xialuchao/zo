@@ -8,6 +8,9 @@ soupui：设计不合理
 request：推荐=====》httpbin.org
 httprunner：社区推荐
 
+python性能：locust
+
+
 request:https://requests.readthedocs.io/en/master/
 企业微信：https://work.weixin.qq.com/api/doc/
 request代理：
@@ -23,5 +26,8 @@ swagger 是api全生命周期的解决方案，完善的生态，已经成为标
 hamcrest 断言库
 jsonpath python库
 schema  校验（校验很多信息的时候）
+
+
+JSON工具 jq
 
 
