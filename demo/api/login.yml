@@ -1,0 +1,36 @@
+name: login
+parameters:
+    - username-password: # ${P(username-password.csv)}
+        - ["1000010", "admin123"]
+        - ["1000111", "admin123"]
+        - ["1000222", "admin123"]
+request:
+    headers:
+        Authorization: ZHAO B2E7BLKUT788CCW22F93PC:kpi9y0opdENzThIdkGcHblBSglc=
+        Content-Type: application/json;charset=UTF-8
+        User-Agent: Mozilla/5.0 (Linux; Android 7.1.2; HLTE200T Build/N2G47H;
+            wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/58.0.3029.83
+            Mobile Safari/537.36 zhaoonline
+        X-Requested-With: com.zhaoonline.www
+        X-Zhao-AppId: B2E7BLKUT788CCW22F93PC
+        X-Zhao-DeviceId: FBED7066-9101-40CE-8C4E-EAA22C887346
+        X-Zhao-OSInfo: '{"os":"h5"}'
+        X-Zhao-UserId: ''
+    json:
+        password: ${password}
+        username: ${username}
+    method: POST
+    url: /h5/auth
+validate:
+-   eq:
+    - status_code
+    - 200
+-   eq:
+    - content.data.user
+    - "1000111"
+-   eq:
+    - content.status
+    - SUCCESS
+-   eq:
+    - content.detail
+    - 请求数据成功

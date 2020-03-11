@@ -1,3 +1,7 @@
+http://ft1.mobile.zhaoonline.com/doc.html#/default/logistic/waitReceivingUsingGET
+
+https://github.com/debugtalk/hogwarts-httprunner
+
 常用的测试框架说起
 pytest、unittest
 postman
@@ -9,3 +13,7 @@ rest-assured
 reobotframework
 curl
 httpie
+
+
+coveralls
+Travis CI
