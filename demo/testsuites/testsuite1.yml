@@ -2,12 +2,9 @@
 config:
     name: "demo parameter"
 
-
-
-
 testcases:
 -
     name: login
-    testcase: ../testcases/zhao_login.yml
+    testcase: testcases/zhao_login.yml
     parameters:
-        username-password: ${P(username-password.csv)}
+        username-password: ${P(data/username-password.csv)}

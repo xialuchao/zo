@@ -20,3 +20,6 @@ Travis CI
 
 1.登陆的参数化，必须在testsuites文件夹下
 2.parameters需要再testcase里，不能在config中
+3.要加载.env环境变量，运行目录需要和.env同一级
+4.加载.env环境变量，需要安装pipenv（使用这个库来加载读取环境变量的）
+5.
