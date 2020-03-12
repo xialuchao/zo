@@ -6,5 +6,10 @@ config:
     variables: {}
 
 teststeps:
+#-
+#    name: login
+#    api: api/login.yml
     - name: login
       api: api/login_api.yml
+    - name: WaitPay
+      api: api/WaitPay_api.yml
