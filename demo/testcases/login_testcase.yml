@@ -1,0 +1,15 @@
+config:
+    name: zhaoonline login
+    base_url: ${ENV(base_url)}
+#    export:
+#      - username
+    variables: {}
+
+teststeps:
+#-
+#    name: login
+#    api: api/login.yml
+    - name: login
+      api: api/login_api.yml
+    - name: WaitPay
+      api: api/WaitPay_api.yml

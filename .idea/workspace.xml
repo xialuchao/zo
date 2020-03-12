@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ead81cf-f338-4817-b18b-4b725b5704b2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/demo/data/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/data/username-password.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/testcases/login_testcase.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HR" beforeDir="false" afterPath="$PROJECT_DIR$/HR" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/api/login.yml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/api/login.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/testcases/zhao_login.yml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/testcases/zhao_login.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/testsuites/logs/testsuite1.parse_failed.json" beforeDir="false" afterPath="$PROJECT_DIR$/demo/testsuites/logs/testsuite1.parse_failed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/api/WaitPay.har" beforeDir="false" afterPath="$PROJECT_DIR$/demo/api/WaitPay_api.har" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/api/WaitPay.yml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/api/WaitPay_api.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/api/login.yml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/api/login_api.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/data/username-password.csv" beforeDir="false" afterPath="$PROJECT_DIR$/demo/data/username-password.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/testcases/zhao_login.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/testsuites/testsuite1.yml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/testsuites/testsuite1.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/testsuites/username-password.csv" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,47 +48,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="zhao_login.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo/testcases/zhao_login.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HR" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HR">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo/.env">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="4" column="32" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="demo_testcase.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo/testcases/demo_testcase.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo/.gitignore">
+      <file leaf-file-name="login_testcase.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo/testcases/login_testcase.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="54">
-              <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login_api.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo/api/login_api.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="3" column="21" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WaitPay_api.yml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/demo/api/WaitPay_api.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -97,17 +78,26 @@
       <file leaf-file-name="username-password.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo/data/username-password.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+            <state relative-caret-position="108">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/demo/api/login.yml">
+      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+            <state relative-caret-position="54">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testsuite1.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo/testsuites/testsuite1.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -152,13 +142,16 @@
         <option value="$PROJECT_DIR$/demo/testcases/USER-PWD.csv" />
         <option value="$PROJECT_DIR$/demo/username-password.csv" />
         <option value="$PROJECT_DIR$/demo/testcases/username-password.csv" />
-        <option value="$PROJECT_DIR$/demo/.env" />
-        <option value="$PROJECT_DIR$/demo/api/WaitPay.yml" />
         <option value="$PROJECT_DIR$/demo/testsuites/username-password.csv" />
-        <option value="$PROJECT_DIR$/demo/testcases/zhao_login.yml" />
-        <option value="$PROJECT_DIR$/demo/testsuites/testsuite1.yml" />
         <option value="$PROJECT_DIR$/HR" />
         <option value="$PROJECT_DIR$/demo/api/login.yml" />
+        <option value="$PROJECT_DIR$/demo/.env" />
+        <option value="$PROJECT_DIR$/demo/testcases/zhao_login.yml" />
+        <option value="$PROJECT_DIR$/demo/api/WaitPay.yml" />
+        <option value="$PROJECT_DIR$/demo/testsuites/testsuite1.yml" />
+        <option value="$PROJECT_DIR$/demo/testcases/login_testcase.yml" />
+        <option value="$PROJECT_DIR$/demo/data/username-password.csv" />
+        <option value="$PROJECT_DIR$/demo/api/WaitPay_api.yml" />
       </list>
     </option>
   </component>
@@ -200,7 +193,19 @@
               <item name="PAGEO" type="b2602c69:ProjectViewProjectNode" />
               <item name="PAGEO" type="462c0819:PsiDirectoryNode" />
               <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PAGEO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PAGEO" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PAGEO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PAGEO" type="462c0819:PsiDirectoryNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="testcases" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="PAGEO" type="b2602c69:ProjectViewProjectNode" />
@@ -440,7 +445,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583921166568</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="use .ENV parameter">
+      <created>1583995710041</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1583995710041</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -477,6 +489,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50321335" side_tool="true" weight="0.32791328" />
@@ -484,8 +497,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4974293" weight="0.32791328" />
       <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.49871466" weight="0.3292683" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5025707" side_tool="true" weight="0.32791328" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49678662" visible="true" weight="0.32791328" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49402392" visible="true" weight="0.14717224" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49678662" visible="true" weight="0.32791328" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49402392" visible="true" weight="0.14717224" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" weight="0.32969153" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32969153" />
@@ -551,7 +564,8 @@
     <MESSAGE value="add_docker" />
     <MESSAGE value="add_inter" />
     <MESSAGE value="hr zhao login" />
-    <option name="LAST_COMMIT_MESSAGE" value="hr zhao login" />
+    <MESSAGE value="use .ENV parameter" />
+    <option name="LAST_COMMIT_MESSAGE" value="use .ENV parameter" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -811,9 +825,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/api/WaitPay.har">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://D:/untitled/venv/Lib/site-packages/httprunner/runner.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1620" />
@@ -822,31 +833,10 @@
     <entry file="file://$PROJECT_DIR$/demo/api/zhao_login.har">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/api/WaitPay.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo/api/demo_api.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="3" column="10" selection-start-line="2" selection-end-line="3" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/data/username-password.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/testcases/zhao_login.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -871,24 +861,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/demo/api/WaitPay_api.har">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/demo/testsuites/testsuite1.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        <state relative-caret-position="216">
+          <caret line="8" column="38" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/testcases/login_testcase.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/data/username-password.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo/.env">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="32" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="32" />
+        <state relative-caret-position="54">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/api/login.yml">
+    <entry file="file://$PROJECT_DIR$/demo/api/login_api.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+        <state relative-caret-position="81">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/api/WaitPay_api.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="19" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="19" />
         </state>
       </provider>
     </entry>
