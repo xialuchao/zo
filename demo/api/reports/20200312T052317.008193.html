@@ -1,0 +1,1331 @@
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> - TestReport</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      color: #333;
+      margin: 0 auto;
+      width: 960px;
+    }
+    #summary {
+      width: 960px;
+      margin-bottom: 20px;
+    }
+    #summary th {
+      background-color: skyblue;
+      padding: 5px 12px;
+    }
+    #summary td {
+      background-color: lightblue;
+      text-align: center;
+      padding: 4px 8px;
+    }
+    .details {
+      width: 960px;
+      margin-bottom: 20px;
+    }
+    .details th {
+      background-color: skyblue;
+      padding: 5px 12px;
+    }
+    .details tr .passed {
+      background-color: lightgreen;
+    }
+    .details tr .failed {
+      background-color: red;
+    }
+    .details tr .unchecked {
+      background-color: gray;
+    }
+    .details td {
+      background-color: lightblue;
+      padding: 5px 12px;
+    }
+    .details .detail {
+      background-color: lightgrey;
+      font-size: smaller;
+      padding: 5px 10px;
+      line-height: 20px;
+      text-align: left;
+    }
+    .details .success {
+      background-color: greenyellow;
+    }
+    .details .error {
+      background-color: red;
+    }
+    .details .failure {
+      background-color: salmon;
+    }
+    .details .skipped {
+      background-color: gray;
+    }
+
+    .button {
+      font-size: 1em;
+      padding: 6px;
+      width: 4em;
+      text-align: center;
+      background-color: #06d85f;
+      border-radius: 20px/50px;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+    }
+    a.button{
+      color: gray;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .button:hover {
+      background: #2cffbd;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      transition: opacity 500ms;
+      visibility: hidden;
+      opacity: 0;
+      line-height: 25px;
+    }
+    .overlay:target {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .popup {
+      margin: 70px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      width: 50%;
+      position: relative;
+      transition: all 3s ease-in-out;
+    }
+
+    .popup h2 {
+      margin-top: 0;
+      color: #333;
+      font-family: Tahoma, Arial, sans-serif;
+    }
+    .popup .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      transition: all 200ms;
+      font-size: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #333;
+    }
+    .popup .close:hover {
+      color: #06d85f;
+    }
+    .popup .content {
+      max-height: 80%;
+      overflow: auto;
+      text-align: left;
+    }
+    .popup .separator {
+      color:royalblue
+    }
+
+    @media screen and (max-width: 700px) {
+      .box {
+        width: 70%;
+      }
+      .popup {
+        width: 70%;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>Test Report: </h1>
+
+  <h2>Summary</h2>
+  <table id="summary">
+    <tr>
+      <th>START AT</th>
+      <td colspan="4">2020-03-12T05:23:17.008193</td>
+    </tr>
+    <tr>
+      <th>DURATION</th>
+      <td colspan="4">0.156 seconds</td>
+    </tr>
+    <tr>
+      <th>PLATFORM</th>
+      <td>HttpRunner 2.5.7 </td>
+      <td>CPython 3.6.5 </td>
+      <td colspan="2">Windows-7-6.1.7601-SP1</td>
+    </tr>
+    <tr>
+      <th>STAT</th>
+      <th colspan="2">TESTCASES (success/fail)</th>
+      <th colspan="2">TESTSTEPS (success/fail/error/skip)</th>
+    </tr>
+    <tr>
+      <td>total (details) =></td>
+      <td colspan="2">1 (1/0)</td>
+      <td colspan="2">1 (1/0/0/0)</td>
+    </tr>
+  </table>
+
+  <h2>Details</h2>
+
+  
+  
+  <h3>testcase description</h3>
+  <table id="suite_1" class="details">
+    <tr>
+      <td>TOTAL: 1</td>
+      <td>SUCCESS: 1</td>
+      <td>FAILED: 0</td>
+      <td>ERROR: 0</td>
+      <td>SKIPPED: 0</td>
+    </tr>
+    <tr>
+      <th>Status</th>
+      <th colspan="2">Name</th>
+      <th>Response Time</th>
+      <th>Detail</th>
+    </tr>
+
+    
+    
+    
+    <tr id="record_1_1">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">/user/3_3/order/query</td>
+      <td style="text-align:center;width:6em;">150.01 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_1_1">log-1</a>
+        <div id="popup_log_1_1_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_1_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: /user/3_3/order/query</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                            http://ft1.mobile.zhaoonline.com/user/3_3/order/query?queryMall=true
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                            GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;okhttp/3.12.0&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;Accept&#34;: &#34;*/*&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Authorization&#34;: &#34;ZHAO avRZwOxAKwFSlpXsJQH:cE9fC3bdtSh3jViEtdELU96jK/o=&#34;,
+  &#34;Content-Type&#34;: &#34;application/json&#34;,
+  &#34;X-Zhao-AppId&#34;: &#34;fKhnk3UwbjhLP5NuFNQm5W&#34;,
+  &#34;X-Zhao-DeviceId&#34;: &#34;3862ae3f76818a4a&#34;,
+  &#34;X-Zhao-OSInfo&#34;: &#34;{\&#34;os\&#34;:\&#34;android\&#34;,\&#34;osv\&#34;:\&#34;7.1.2\&#34;,\&#34;deviceToken\&#34;:\&#34;1a0018970aed6e7f43e\&#34;,\&#34;appVer\&#34;:\&#34;4.2.16.1\&#34;,\&#34;make\&#34;:\&#34;Hisense\&#34;,\&#34;model\&#34;:\&#34;HLTE200T\&#34;}&#34;,
+  &#34;X-Zhao-UserId&#34;: &#34;1000111&#34;,
+  &#34;charset&#34;: &#34;utf-8&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://ft1.mobile.zhaoonline.com/user/3_3/order/query?queryMall=true
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Server&#34;: &#34;nginx/1.8.1&#34;,
+  &#34;Date&#34;: &#34;Thu, 12 Mar 2020 12:26:27 GMT&#34;,
+  &#34;Content-Type&#34;: &#34;application/json;charset=UTF-8&#34;,
+  &#34;Transfer-Encoding&#34;: &#34;chunked&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;
+}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json;charset=UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>{
+  &#34;status&#34;: &#34;SUCCESS&#34;,
+  &#34;detail&#34;: &#34;请求数据成功&#34;,
+  &#34;data&#34;: {
+    &#34;list&#34;: [
+      {
+        &#34;total&#34;: 14,
+        &#34;merchant&#34;: &#34;赵涌在线&#34;,
+        &#34;channelType&#34;: &#34;O&#34;,
+        &#34;list&#34;: [
+          {
+            &#34;id&#34;: null,
+            &#34;status&#34;: null,
+            &#34;auctionType&#34;: null,
+            &#34;dealAmount&#34;: 0.0,
+            &#34;characterName&#34;: &#34;全品&#34;,
+            &#34;attentionDate&#34;: null,
+            &#34;picPath&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg!400x400&#34;,
+            &#34;deliveryType&#34;: null,
+            &#34;thumbnails&#34;: [
+              {
+                &#34;src&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg!400x400&#34;,
+                &#34;height&#34;: &#34;1506&#34;,
+                &#34;width&#34;: &#34;2077&#34;
+              }
+            ],
+            &#34;isHiddenPrice&#34;: 0,
+            &#34;mallOrderStatus&#34;: null,
+            &#34;isPoint&#34;: null,
+            &#34;consumeScore&#34;: 0,
+            &#34;unit&#34;: null,
+            &#34;tradeMethod&#34;: null,
+            &#34;expectDeliverDate&#34;: null,
+            &#34;payAt&#34;: null,
+            &#34;sendTime&#34;: null,
+            &#34;bidNumber&#34;: 0,
+            &#34;payDate&#34;: null,
+            &#34;dateText&#34;: &#34;超期1天&#34;,
+            &#34;logisticTips&#34;: null,
+            &#34;isPayable&#34;: 1,
+            &#34;isFreezed&#34;: 0,
+            &#34;unpayableTips&#34;: null,
+            &#34;exitBan&#34;: 0,
+            &#34;logisticsNo&#34;: null,
+            &#34;countryId&#34;: null,
+            &#34;provinceId&#34;: null,
+            &#34;cityId&#34;: null,
+            &#34;address&#34;: null,
+            &#34;highlight&#34;: false,
+            &#34;limit&#34;: false,
+            &#34;auction_category_id&#34;: null,
+            &#34;image&#34;: [
+              {
+                &#34;src&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg&#34;,
+                &#34;height&#34;: &#34;1506&#34;,
+                &#34;width&#34;: &#34;2077&#34;
+              }
+            ],
+            &#34;logisticCost&#34;: null,
+            &#34;orderId&#34;: 3422038,
+            &#34;payLimitDate&#34;: &#34;2020-03-10 06:51:56&#34;,
+            &#34;endPrice&#34;: null,
+            &#34;serviceCharge&#34;: null,
+            &#34;totalAmount&#34;: 112.0,
+            &#34;auctionNum&#34;: 1,
+            &#34;auctionId&#34;: &#34;3827317&#34;,
+            &#34;auctionName&#34;: &#34;5第四套/第四版人民币1980年版1元一枚（天蓝冠、CR37666285、PMG 69EPQ）&#34;,
+            &#34;auctionNo&#34;: &#34;214952005&#34;,
+            &#34;endDate&#34;: &#34;2020-03-05 06:51:08&#34;,
+            &#34;from&#34;: &#34;赵涌在线&#34;
+          },
+          {
+            &#34;id&#34;: null,
+            &#34;status&#34;: null,
+            &#34;auctionType&#34;: null,
+            &#34;dealAmount&#34;: 0.0,
+            &#34;characterName&#34;: &#34;全品&#34;,
+            &#34;attentionDate&#34;: null,
+            &#34;picPath&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg!400x400&#34;,
+            &#34;deliveryType&#34;: null,
+            &#34;thumbnails&#34;: [
+              {
+                &#34;src&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg!400x400&#34;,
+                &#34;height&#34;: &#34;1506&#34;,
+                &#34;width&#34;: &#34;2077&#34;
+              }
+            ],
+            &#34;isHiddenPrice&#34;: 0,
+            &#34;mallOrderStatus&#34;: null,
+            &#34;isPoint&#34;: null,
+            &#34;consumeScore&#34;: 0,
+            &#34;unit&#34;: null,
+            &#34;tradeMethod&#34;: null,
+            &#34;expectDeliverDate&#34;: null,
+            &#34;payAt&#34;: null,
+            &#34;sendTime&#34;: null,
+            &#34;bidNumber&#34;: 0,
+            &#34;payDate&#34;: null,
+            &#34;dateText&#34;: &#34;超期1天&#34;,
+            &#34;logisticTips&#34;: null,
+            &#34;isPayable&#34;: 1,
+            &#34;isFreezed&#34;: 0,
+            &#34;unpayableTips&#34;: null,
+            &#34;exitBan&#34;: 0,
+            &#34;logisticsNo&#34;: null,
+            &#34;countryId&#34;: null,
+            &#34;provinceId&#34;: null,
+            &#34;cityId&#34;: null,
+            &#34;address&#34;: null,
+            &#34;highlight&#34;: false,
+            &#34;limit&#34;: false,
+            &#34;auction_category_id&#34;: null,
+            &#34;image&#34;: [
+              {
+                &#34;src&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg&#34;,
+                &#34;height&#34;: &#34;1506&#34;,
+                &#34;width&#34;: &#34;2077&#34;
+              }
+            ],
+            &#34;logisticCost&#34;: null,
+            &#34;orderId&#34;: 3422043,
+            &#34;payLimitDate&#34;: &#34;2020-03-10 06:51:56&#34;,
+            &#34;endPrice&#34;: null,
+            &#34;serviceCharge&#34;: null,
+            &#34;totalAmount&#34;: 112.0,
+            &#34;auctionNum&#34;: 1,
+            &#34;auctionId&#34;: &#34;3827327&#34;,
+            &#34;auctionName&#34;: &#34;15第四套/第四版人民币1980年版1元一枚（天蓝冠、CR37666285、PMG 79EPQ）&#34;,
+            &#34;auctionNo&#34;: &#34;214952015&#34;,
+            &#34;endDate&#34;: &#34;2020-03-05 06:51:08&#34;,
+            &#34;from&#34;: &#34;赵涌在线&#34;
+          },
+          {
+            &#34;id&#34;: null,
+            &#34;status&#34;: null,
+            &#34;auctionType&#34;: null,
+            &#34;dealAmount&#34;: 0.0,
+            &#34;characterName&#34;: &#34;全品&#34;,
+            &#34;attentionDate&#34;: null,
+            &#34;picPath&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg!400x400&#34;,
+            &#34;deliveryType&#34;: null,
+            &#34;thumbnails&#34;: [
+              {
+                &#34;src&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg!400x400&#34;,
+                &#34;height&#34;: &#34;1506&#34;,
+                &#34;width&#34;: &#34;2077&#34;
+              }
+            ],
+            &#34;isHiddenPrice&#34;: 0,
+            &#34;mallOrderStatus&#34;: null,
+            &#34;isPoint&#34;: null,
+            &#34;consumeScore&#34;: 0,
+            &#34;unit&#34;: null,
+            &#34;tradeMethod&#34;: null,
+            &#34;expectDeliverDate&#34;: null,
+            &#34;payAt&#34;: null,
+            &#34;sendTime&#34;: null,
+            &#34;bidNumber&#34;: 0,
+            &#34;payDate&#34;: null,
+            &#34;dateText&#34;: &#34;超期1天&#34;,
+            &#34;logisticTips&#34;: null,
+            &#34;isPayable&#34;: 1,
+            &#34;isFreezed&#34;: 0,
+            &#34;unpayableTips&#34;: null,
+            &#34;exitBan&#34;: 0,
+            &#34;logisticsNo&#34;: null,
+            &#34;countryId&#34;: null,
+            &#34;provinceId&#34;: null,
+            &#34;cityId&#34;: null,
+            &#34;address&#34;: null,
+            &#34;highlight&#34;: false,
+            &#34;limit&#34;: false,
+            &#34;auction_category_id&#34;: null,
+            &#34;image&#34;: [
+              {
+                &#34;src&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg&#34;,
+                &#34;height&#34;: &#34;1506&#34;,
+                &#34;width&#34;: &#34;2077&#34;
+              }
+            ],
+            &#34;logisticCost&#34;: null,
+            &#34;orderId&#34;: 3422045,
+            &#34;payLimitDate&#34;: &#34;2020-03-10 06:51:57&#34;,
+            &#34;endPrice&#34;: null,
+            &#34;serviceCharge&#34;: null,
+            &#34;totalAmount&#34;: 112.0,
+            &#34;auctionNum&#34;: 1,
+            &#34;auctionId&#34;: &#34;3827340&#34;,
+            &#34;auctionName&#34;: &#34;28第四套/第四版人民币1980年版1元一枚（天蓝冠、CR37666285、PMG 92EPQ）&#34;,
+            &#34;auctionNo&#34;: &#34;214952028&#34;,
+            &#34;endDate&#34;: &#34;2020-03-05 06:51:08&#34;,
+            &#34;from&#34;: &#34;赵涌在线&#34;
+          },
+          {
+            &#34;id&#34;: null,
+            &#34;status&#34;: null,
+            &#34;auctionType&#34;: null,
+            &#34;dealAmount&#34;: 0.0,
+            &#34;characterName&#34;: &#34;全品&#34;,
+            &#34;attentionDate&#34;: null,
+            &#34;picPath&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg!400x400&#34;,
+            &#34;deliveryType&#34;: null,
+            &#34;thumbnails&#34;: [
+              {
+                &#34;src&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg!400x400&#34;,
+                &#34;height&#34;: &#34;1506&#34;,
+                &#34;width&#34;: &#34;2077&#34;
+              }
+            ],
+            &#34;isHiddenPrice&#34;: 0,
+            &#34;mallOrderStatus&#34;: null,
+            &#34;isPoint&#34;: null,
+            &#34;consumeScore&#34;: 0,
+            &#34;unit&#34;: null,
+            &#34;tradeMethod&#34;: null,
+            &#34;expectDeliverDate&#34;: null,
+            &#34;payAt&#34;: null,
+            &#34;sendTime&#34;: null,
+            &#34;bidNumber&#34;: 0,
+            &#34;payDate&#34;: null,
+            &#34;dateText&#34;: &#34;超期1天&#34;,
+            &#34;logisticTips&#34;: null,
+            &#34;isPayable&#34;: 1,
+            &#34;isFreezed&#34;: 0,
+            &#34;unpayableTips&#34;: null,
+            &#34;exitBan&#34;: 0,
+            &#34;logisticsNo&#34;: null,
+            &#34;countryId&#34;: null,
+            &#34;provinceId&#34;: null,
+            &#34;cityId&#34;: null,
+            &#34;address&#34;: null,
+            &#34;highlight&#34;: false,
+            &#34;limit&#34;: false,
+            &#34;auction_category_id&#34;: null,
+            &#34;image&#34;: [
+              {
+                &#34;src&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg&#34;,
+                &#34;height&#34;: &#34;1506&#34;,
+                &#34;width&#34;: &#34;2077&#34;
+              }
+            ],
+            &#34;logisticCost&#34;: null,
+            &#34;orderId&#34;: 3422053,
+            &#34;payLimitDate&#34;: &#34;2020-03-10 06:51:58&#34;,
+            &#34;endPrice&#34;: null,
+            &#34;serviceCharge&#34;: null,
+            &#34;totalAmount&#34;: 112.0,
+            &#34;auctionNum&#34;: 1,
+            &#34;auctionId&#34;: &#34;3827325&#34;,
+            &#34;auctionName&#34;: &#34;13第四套/第四版人民币1980年版1元一枚（天蓝冠、CR37666285、PMG 77EPQ）&#34;,
+            &#34;auctionNo&#34;: &#34;214952013&#34;,
+            &#34;endDate&#34;: &#34;2020-03-05 06:51:08&#34;,
+            &#34;from&#34;: &#34;赵涌在线&#34;
+          },
+          {
+            &#34;id&#34;: null,
+            &#34;status&#34;: null,
+            &#34;auctionType&#34;: null,
+            &#34;dealAmount&#34;: 0.0,
+            &#34;characterName&#34;: &#34;全品&#34;,
+            &#34;attentionDate&#34;: null,
+            &#34;picPath&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg!400x400&#34;,
+            &#34;deliveryType&#34;: null,
+            &#34;thumbnails&#34;: [
+              {
+                &#34;src&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg!400x400&#34;,
+                &#34;height&#34;: &#34;1506&#34;,
+                &#34;width&#34;: &#34;2077&#34;
+              }
+            ],
+            &#34;isHiddenPrice&#34;: 0,
+            &#34;mallOrderStatus&#34;: null,
+            &#34;isPoint&#34;: null,
+            &#34;consumeScore&#34;: 0,
+            &#34;unit&#34;: null,
+            &#34;tradeMethod&#34;: null,
+            &#34;expectDeliverDate&#34;: null,
+            &#34;payAt&#34;: null,
+            &#34;sendTime&#34;: null,
+            &#34;bidNumber&#34;: 0,
+            &#34;payDate&#34;: null,
+            &#34;dateText&#34;: &#34;超期1天&#34;,
+            &#34;logisticTips&#34;: null,
+            &#34;isPayable&#34;: 1,
+            &#34;isFreezed&#34;: 0,
+            &#34;unpayableTips&#34;: null,
+            &#34;exitBan&#34;: 0,
+            &#34;logisticsNo&#34;: null,
+            &#34;countryId&#34;: null,
+            &#34;provinceId&#34;: null,
+            &#34;cityId&#34;: null,
+            &#34;address&#34;: null,
+            &#34;highlight&#34;: false,
+            &#34;limit&#34;: false,
+            &#34;auction_category_id&#34;: null,
+            &#34;image&#34;: [
+              {
+                &#34;src&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg&#34;,
+                &#34;height&#34;: &#34;1506&#34;,
+                &#34;width&#34;: &#34;2077&#34;
+              }
+            ],
+            &#34;logisticCost&#34;: null,
+            &#34;orderId&#34;: 3422057,
+            &#34;payLimitDate&#34;: &#34;2020-03-10 06:51:59&#34;,
+            &#34;endPrice&#34;: null,
+            &#34;serviceCharge&#34;: null,
+            &#34;totalAmount&#34;: 112.0,
+            &#34;auctionNum&#34;: 1,
+            &#34;auctionId&#34;: &#34;3827320&#34;,
+            &#34;auctionName&#34;: &#34;8第四套/第四版人民币1980年版1元一枚（天蓝冠、CR37666285、PMG 72EPQ）&#34;,
+            &#34;auctionNo&#34;: &#34;214952008&#34;,
+            &#34;endDate&#34;: &#34;2020-03-05 06:51:08&#34;,
+            &#34;from&#34;: &#34;赵涌在线&#34;
+          },
+          {
+            &#34;id&#34;: null,
+            &#34;status&#34;: null,
+            &#34;auctionType&#34;: null,
+            &#34;dealAmount&#34;: 0.0,
+            &#34;characterName&#34;: &#34;全品&#34;,
+            &#34;attentionDate&#34;: null,
+            &#34;picPath&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg!400x400&#34;,
+            &#34;deliveryType&#34;: null,
+            &#34;thumbnails&#34;: [
+              {
+                &#34;src&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg!400x400&#34;,
+                &#34;height&#34;: &#34;1506&#34;,
+                &#34;width&#34;: &#34;2077&#34;
+              }
+            ],
+            &#34;isHiddenPrice&#34;: 0,
+            &#34;mallOrderStatus&#34;: null,
+            &#34;isPoint&#34;: null,
+            &#34;consumeScore&#34;: 0,
+            &#34;unit&#34;: null,
+            &#34;tradeMethod&#34;: null,
+            &#34;expectDeliverDate&#34;: null,
+            &#34;payAt&#34;: null,
+            &#34;sendTime&#34;: null,
+            &#34;bidNumber&#34;: 0,
+            &#34;payDate&#34;: null,
+            &#34;dateText&#34;: &#34;超期1天&#34;,
+            &#34;logisticTips&#34;: null,
+            &#34;isPayable&#34;: 1,
+            &#34;isFreezed&#34;: 0,
+            &#34;unpayableTips&#34;: null,
+            &#34;exitBan&#34;: 0,
+            &#34;logisticsNo&#34;: null,
+            &#34;countryId&#34;: null,
+            &#34;provinceId&#34;: null,
+            &#34;cityId&#34;: null,
+            &#34;address&#34;: null,
+            &#34;highlight&#34;: false,
+            &#34;limit&#34;: false,
+            &#34;auction_category_id&#34;: null,
+            &#34;image&#34;: [
+              {
+                &#34;src&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg&#34;,
+                &#34;height&#34;: &#34;1506&#34;,
+                &#34;width&#34;: &#34;2077&#34;
+              }
+            ],
+            &#34;logisticCost&#34;: null,
+            &#34;orderId&#34;: 3422061,
+            &#34;payLimitDate&#34;: &#34;2020-03-10 06:51:59&#34;,
+            &#34;endPrice&#34;: null,
+            &#34;serviceCharge&#34;: null,
+            &#34;totalAmount&#34;: 112.0,
+            &#34;auctionNum&#34;: 1,
+            &#34;auctionId&#34;: &#34;3827345&#34;,
+            &#34;auctionName&#34;: &#34;33第四套/第四版人民币1980年版1元一枚（天蓝冠、CR37666285、PMG 97EPQ）&#34;,
+            &#34;auctionNo&#34;: &#34;214952033&#34;,
+            &#34;endDate&#34;: &#34;2020-03-05 06:51:08&#34;,
+            &#34;from&#34;: &#34;赵涌在线&#34;
+          },
+          {
+            &#34;id&#34;: null,
+            &#34;status&#34;: null,
+            &#34;auctionType&#34;: null,
+            &#34;dealAmount&#34;: 0.0,
+            &#34;characterName&#34;: &#34;全品&#34;,
+            &#34;attentionDate&#34;: null,
+            &#34;picPath&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg!400x400&#34;,
+            &#34;deliveryType&#34;: null,
+            &#34;thumbnails&#34;: [
+              {
+                &#34;src&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg!400x400&#34;,
+                &#34;height&#34;: &#34;1506&#34;,
+                &#34;width&#34;: &#34;2077&#34;
+              }
+            ],
+            &#34;isHiddenPrice&#34;: 0,
+            &#34;mallOrderStatus&#34;: null,
+            &#34;isPoint&#34;: null,
+            &#34;consumeScore&#34;: 0,
+            &#34;unit&#34;: null,
+            &#34;tradeMethod&#34;: null,
+            &#34;expectDeliverDate&#34;: null,
+            &#34;payAt&#34;: null,
+            &#34;sendTime&#34;: null,
+            &#34;bidNumber&#34;: 0,
+            &#34;payDate&#34;: null,
+            &#34;dateText&#34;: &#34;超期1天&#34;,
+            &#34;logisticTips&#34;: null,
+            &#34;isPayable&#34;: 1,
+            &#34;isFreezed&#34;: 0,
+            &#34;unpayableTips&#34;: null,
+            &#34;exitBan&#34;: 0,
+            &#34;logisticsNo&#34;: null,
+            &#34;countryId&#34;: null,
+            &#34;provinceId&#34;: null,
+            &#34;cityId&#34;: null,
+            &#34;address&#34;: null,
+            &#34;highlight&#34;: false,
+            &#34;limit&#34;: false,
+            &#34;auction_category_id&#34;: null,
+            &#34;image&#34;: [
+              {
+                &#34;src&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg&#34;,
+                &#34;height&#34;: &#34;1506&#34;,
+                &#34;width&#34;: &#34;2077&#34;
+              }
+            ],
+            &#34;logisticCost&#34;: null,
+            &#34;orderId&#34;: 3422065,
+            &#34;payLimitDate&#34;: &#34;2020-03-10 06:51:59&#34;,
+            &#34;endPrice&#34;: null,
+            &#34;serviceCharge&#34;: null,
+            &#34;totalAmount&#34;: 112.0,
+            &#34;auctionNum&#34;: 1,
+            &#34;auctionId&#34;: &#34;3827323&#34;,
+            &#34;auctionName&#34;: &#34;11第四套/第四版人民币1980年版1元一枚（天蓝冠、CR37666285、PMG 75EPQ）&#34;,
+            &#34;auctionNo&#34;: &#34;214952011&#34;,
+            &#34;endDate&#34;: &#34;2020-03-05 06:51:08&#34;,
+            &#34;from&#34;: &#34;赵涌在线&#34;
+          },
+          {
+            &#34;id&#34;: null,
+            &#34;status&#34;: null,
+            &#34;auctionType&#34;: null,
+            &#34;dealAmount&#34;: 0.0,
+            &#34;characterName&#34;: &#34;全品&#34;,
+            &#34;attentionDate&#34;: null,
+            &#34;picPath&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg!400x400&#34;,
+            &#34;deliveryType&#34;: null,
+            &#34;thumbnails&#34;: [
+              {
+                &#34;src&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg!400x400&#34;,
+                &#34;height&#34;: &#34;1506&#34;,
+                &#34;width&#34;: &#34;2077&#34;
+              }
+            ],
+            &#34;isHiddenPrice&#34;: 0,
+            &#34;mallOrderStatus&#34;: null,
+            &#34;isPoint&#34;: null,
+            &#34;consumeScore&#34;: 0,
+            &#34;unit&#34;: null,
+            &#34;tradeMethod&#34;: null,
+            &#34;expectDeliverDate&#34;: null,
+            &#34;payAt&#34;: null,
+            &#34;sendTime&#34;: null,
+            &#34;bidNumber&#34;: 0,
+            &#34;payDate&#34;: null,
+            &#34;dateText&#34;: &#34;超期1天&#34;,
+            &#34;logisticTips&#34;: null,
+            &#34;isPayable&#34;: 1,
+            &#34;isFreezed&#34;: 0,
+            &#34;unpayableTips&#34;: null,
+            &#34;exitBan&#34;: 0,
+            &#34;logisticsNo&#34;: null,
+            &#34;countryId&#34;: null,
+            &#34;provinceId&#34;: null,
+            &#34;cityId&#34;: null,
+            &#34;address&#34;: null,
+            &#34;highlight&#34;: false,
+            &#34;limit&#34;: false,
+            &#34;auction_category_id&#34;: null,
+            &#34;image&#34;: [
+              {
+                &#34;src&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg&#34;,
+                &#34;height&#34;: &#34;1506&#34;,
+                &#34;width&#34;: &#34;2077&#34;
+              }
+            ],
+            &#34;logisticCost&#34;: null,
+            &#34;orderId&#34;: 3422068,
+            &#34;payLimitDate&#34;: &#34;2020-03-10 06:52:00&#34;,
+            &#34;endPrice&#34;: null,
+            &#34;serviceCharge&#34;: null,
+            &#34;totalAmount&#34;: 112.0,
+            &#34;auctionNum&#34;: 1,
+            &#34;auctionId&#34;: &#34;3827337&#34;,
+            &#34;auctionName&#34;: &#34;25第四套/第四版人民币1980年版1元一枚（天蓝冠、CR37666285、PMG 89EPQ）&#34;,
+            &#34;auctionNo&#34;: &#34;214952025&#34;,
+            &#34;endDate&#34;: &#34;2020-03-05 06:51:08&#34;,
+            &#34;from&#34;: &#34;赵涌在线&#34;
+          },
+          {
+            &#34;id&#34;: null,
+            &#34;status&#34;: null,
+            &#34;auctionType&#34;: null,
+            &#34;dealAmount&#34;: 0.0,
+            &#34;characterName&#34;: &#34;全品&#34;,
+            &#34;attentionDate&#34;: null,
+            &#34;picPath&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg!400x400&#34;,
+            &#34;deliveryType&#34;: null,
+            &#34;thumbnails&#34;: [
+              {
+                &#34;src&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg!400x400&#34;,
+                &#34;height&#34;: &#34;1506&#34;,
+                &#34;width&#34;: &#34;2077&#34;
+              }
+            ],
+            &#34;isHiddenPrice&#34;: 0,
+            &#34;mallOrderStatus&#34;: null,
+            &#34;isPoint&#34;: null,
+            &#34;consumeScore&#34;: 0,
+            &#34;unit&#34;: null,
+            &#34;tradeMethod&#34;: null,
+            &#34;expectDeliverDate&#34;: null,
+            &#34;payAt&#34;: null,
+            &#34;sendTime&#34;: null,
+            &#34;bidNumber&#34;: 0,
+            &#34;payDate&#34;: null,
+            &#34;dateText&#34;: &#34;超期1天&#34;,
+            &#34;logisticTips&#34;: null,
+            &#34;isPayable&#34;: 1,
+            &#34;isFreezed&#34;: 0,
+            &#34;unpayableTips&#34;: null,
+            &#34;exitBan&#34;: 0,
+            &#34;logisticsNo&#34;: null,
+            &#34;countryId&#34;: null,
+            &#34;provinceId&#34;: null,
+            &#34;cityId&#34;: null,
+            &#34;address&#34;: null,
+            &#34;highlight&#34;: false,
+            &#34;limit&#34;: false,
+            &#34;auction_category_id&#34;: null,
+            &#34;image&#34;: [
+              {
+                &#34;src&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg&#34;,
+                &#34;height&#34;: &#34;1506&#34;,
+                &#34;width&#34;: &#34;2077&#34;
+              }
+            ],
+            &#34;logisticCost&#34;: null,
+            &#34;orderId&#34;: 3422071,
+            &#34;payLimitDate&#34;: &#34;2020-03-10 06:52:00&#34;,
+            &#34;endPrice&#34;: null,
+            &#34;serviceCharge&#34;: null,
+            &#34;totalAmount&#34;: 112.0,
+            &#34;auctionNum&#34;: 1,
+            &#34;auctionId&#34;: &#34;3827314&#34;,
+            &#34;auctionName&#34;: &#34;2第四套/第四版人民币1980年版1元一枚（天蓝冠、CR37666285、PMG 66EPQ）&#34;,
+            &#34;auctionNo&#34;: &#34;214952002&#34;,
+            &#34;endDate&#34;: &#34;2020-03-05 06:51:08&#34;,
+            &#34;from&#34;: &#34;赵涌在线&#34;
+          },
+          {
+            &#34;id&#34;: null,
+            &#34;status&#34;: null,
+            &#34;auctionType&#34;: null,
+            &#34;dealAmount&#34;: 0.0,
+            &#34;characterName&#34;: &#34;全品&#34;,
+            &#34;attentionDate&#34;: null,
+            &#34;picPath&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg!400x400&#34;,
+            &#34;deliveryType&#34;: null,
+            &#34;thumbnails&#34;: [
+              {
+                &#34;src&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg!400x400&#34;,
+                &#34;height&#34;: &#34;1506&#34;,
+                &#34;width&#34;: &#34;2077&#34;
+              }
+            ],
+            &#34;isHiddenPrice&#34;: 0,
+            &#34;mallOrderStatus&#34;: null,
+            &#34;isPoint&#34;: null,
+            &#34;consumeScore&#34;: 0,
+            &#34;unit&#34;: null,
+            &#34;tradeMethod&#34;: null,
+            &#34;expectDeliverDate&#34;: null,
+            &#34;payAt&#34;: null,
+            &#34;sendTime&#34;: null,
+            &#34;bidNumber&#34;: 0,
+            &#34;payDate&#34;: null,
+            &#34;dateText&#34;: &#34;超期1天&#34;,
+            &#34;logisticTips&#34;: null,
+            &#34;isPayable&#34;: 1,
+            &#34;isFreezed&#34;: 0,
+            &#34;unpayableTips&#34;: null,
+            &#34;exitBan&#34;: 0,
+            &#34;logisticsNo&#34;: null,
+            &#34;countryId&#34;: null,
+            &#34;provinceId&#34;: null,
+            &#34;cityId&#34;: null,
+            &#34;address&#34;: null,
+            &#34;highlight&#34;: false,
+            &#34;limit&#34;: false,
+            &#34;auction_category_id&#34;: null,
+            &#34;image&#34;: [
+              {
+                &#34;src&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg&#34;,
+                &#34;height&#34;: &#34;1506&#34;,
+                &#34;width&#34;: &#34;2077&#34;
+              }
+            ],
+            &#34;logisticCost&#34;: null,
+            &#34;orderId&#34;: 3422046,
+            &#34;payLimitDate&#34;: &#34;2020-03-10 06:51:57&#34;,
+            &#34;endPrice&#34;: null,
+            &#34;serviceCharge&#34;: null,
+            &#34;totalAmount&#34;: 112.0,
+            &#34;auctionNum&#34;: 1,
+            &#34;auctionId&#34;: &#34;3827330&#34;,
+            &#34;auctionName&#34;: &#34;18第四套/第四版人民币1980年版1元一枚（天蓝冠、CR37666285、PMG 82EPQ）&#34;,
+            &#34;auctionNo&#34;: &#34;214952018&#34;,
+            &#34;endDate&#34;: &#34;2020-03-05 06:51:08&#34;,
+            &#34;from&#34;: &#34;赵涌在线&#34;
+          },
+          {
+            &#34;id&#34;: null,
+            &#34;status&#34;: null,
+            &#34;auctionType&#34;: null,
+            &#34;dealAmount&#34;: 0.0,
+            &#34;characterName&#34;: &#34;全品&#34;,
+            &#34;attentionDate&#34;: null,
+            &#34;picPath&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg!400x400&#34;,
+            &#34;deliveryType&#34;: null,
+            &#34;thumbnails&#34;: [
+              {
+                &#34;src&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg!400x400&#34;,
+                &#34;height&#34;: &#34;1506&#34;,
+                &#34;width&#34;: &#34;2077&#34;
+              }
+            ],
+            &#34;isHiddenPrice&#34;: 0,
+            &#34;mallOrderStatus&#34;: null,
+            &#34;isPoint&#34;: null,
+            &#34;consumeScore&#34;: 0,
+            &#34;unit&#34;: null,
+            &#34;tradeMethod&#34;: null,
+            &#34;expectDeliverDate&#34;: null,
+            &#34;payAt&#34;: null,
+            &#34;sendTime&#34;: null,
+            &#34;bidNumber&#34;: 0,
+            &#34;payDate&#34;: null,
+            &#34;dateText&#34;: &#34;超期1天&#34;,
+            &#34;logisticTips&#34;: null,
+            &#34;isPayable&#34;: 1,
+            &#34;isFreezed&#34;: 0,
+            &#34;unpayableTips&#34;: null,
+            &#34;exitBan&#34;: 0,
+            &#34;logisticsNo&#34;: null,
+            &#34;countryId&#34;: null,
+            &#34;provinceId&#34;: null,
+            &#34;cityId&#34;: null,
+            &#34;address&#34;: null,
+            &#34;highlight&#34;: false,
+            &#34;limit&#34;: false,
+            &#34;auction_category_id&#34;: null,
+            &#34;image&#34;: [
+              {
+                &#34;src&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg&#34;,
+                &#34;height&#34;: &#34;1506&#34;,
+                &#34;width&#34;: &#34;2077&#34;
+              }
+            ],
+            &#34;logisticCost&#34;: null,
+            &#34;orderId&#34;: 3422049,
+            &#34;payLimitDate&#34;: &#34;2020-03-10 06:51:57&#34;,
+            &#34;endPrice&#34;: null,
+            &#34;serviceCharge&#34;: null,
+            &#34;totalAmount&#34;: 112.0,
+            &#34;auctionNum&#34;: 1,
+            &#34;auctionId&#34;: &#34;3827336&#34;,
+            &#34;auctionName&#34;: &#34;24第四套/第四版人民币1980年版1元一枚（天蓝冠、CR37666285、PMG 88EPQ）&#34;,
+            &#34;auctionNo&#34;: &#34;214952024&#34;,
+            &#34;endDate&#34;: &#34;2020-03-05 06:51:08&#34;,
+            &#34;from&#34;: &#34;赵涌在线&#34;
+          },
+          {
+            &#34;id&#34;: null,
+            &#34;status&#34;: null,
+            &#34;auctionType&#34;: null,
+            &#34;dealAmount&#34;: 0.0,
+            &#34;characterName&#34;: &#34;全品&#34;,
+            &#34;attentionDate&#34;: null,
+            &#34;picPath&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg!400x400&#34;,
+            &#34;deliveryType&#34;: null,
+            &#34;thumbnails&#34;: [
+              {
+                &#34;src&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg!400x400&#34;,
+                &#34;height&#34;: &#34;1506&#34;,
+                &#34;width&#34;: &#34;2077&#34;
+              }
+            ],
+            &#34;isHiddenPrice&#34;: 0,
+            &#34;mallOrderStatus&#34;: null,
+            &#34;isPoint&#34;: null,
+            &#34;consumeScore&#34;: 0,
+            &#34;unit&#34;: null,
+            &#34;tradeMethod&#34;: null,
+            &#34;expectDeliverDate&#34;: null,
+            &#34;payAt&#34;: null,
+            &#34;sendTime&#34;: null,
+            &#34;bidNumber&#34;: 0,
+            &#34;payDate&#34;: null,
+            &#34;dateText&#34;: &#34;超期1天&#34;,
+            &#34;logisticTips&#34;: null,
+            &#34;isPayable&#34;: 1,
+            &#34;isFreezed&#34;: 0,
+            &#34;unpayableTips&#34;: null,
+            &#34;exitBan&#34;: 0,
+            &#34;logisticsNo&#34;: null,
+            &#34;countryId&#34;: null,
+            &#34;provinceId&#34;: null,
+            &#34;cityId&#34;: null,
+            &#34;address&#34;: null,
+            &#34;highlight&#34;: false,
+            &#34;limit&#34;: false,
+            &#34;auction_category_id&#34;: null,
+            &#34;image&#34;: [
+              {
+                &#34;src&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg&#34;,
+                &#34;height&#34;: &#34;1506&#34;,
+                &#34;width&#34;: &#34;2077&#34;
+              }
+            ],
+            &#34;logisticCost&#34;: null,
+            &#34;orderId&#34;: 3422052,
+            &#34;payLimitDate&#34;: &#34;2020-03-10 06:51:58&#34;,
+            &#34;endPrice&#34;: null,
+            &#34;serviceCharge&#34;: null,
+            &#34;totalAmount&#34;: 112.0,
+            &#34;auctionNum&#34;: 1,
+            &#34;auctionId&#34;: &#34;3827343&#34;,
+            &#34;auctionName&#34;: &#34;31第四套/第四版人民币1980年版1元一枚（天蓝冠、CR37666285、PMG 95EPQ）&#34;,
+            &#34;auctionNo&#34;: &#34;214952031&#34;,
+            &#34;endDate&#34;: &#34;2020-03-05 06:51:08&#34;,
+            &#34;from&#34;: &#34;赵涌在线&#34;
+          },
+          {
+            &#34;id&#34;: null,
+            &#34;status&#34;: null,
+            &#34;auctionType&#34;: null,
+            &#34;dealAmount&#34;: 0.0,
+            &#34;characterName&#34;: &#34;全品&#34;,
+            &#34;attentionDate&#34;: null,
+            &#34;picPath&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg!400x400&#34;,
+            &#34;deliveryType&#34;: null,
+            &#34;thumbnails&#34;: [
+              {
+                &#34;src&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg!400x400&#34;,
+                &#34;height&#34;: &#34;1506&#34;,
+                &#34;width&#34;: &#34;2077&#34;
+              }
+            ],
+            &#34;isHiddenPrice&#34;: 0,
+            &#34;mallOrderStatus&#34;: null,
+            &#34;isPoint&#34;: null,
+            &#34;consumeScore&#34;: 0,
+            &#34;unit&#34;: null,
+            &#34;tradeMethod&#34;: null,
+            &#34;expectDeliverDate&#34;: null,
+            &#34;payAt&#34;: null,
+            &#34;sendTime&#34;: null,
+            &#34;bidNumber&#34;: 0,
+            &#34;payDate&#34;: null,
+            &#34;dateText&#34;: &#34;超期1天&#34;,
+            &#34;logisticTips&#34;: null,
+            &#34;isPayable&#34;: 1,
+            &#34;isFreezed&#34;: 0,
+            &#34;unpayableTips&#34;: null,
+            &#34;exitBan&#34;: 0,
+            &#34;logisticsNo&#34;: null,
+            &#34;countryId&#34;: null,
+            &#34;provinceId&#34;: null,
+            &#34;cityId&#34;: null,
+            &#34;address&#34;: null,
+            &#34;highlight&#34;: false,
+            &#34;limit&#34;: false,
+            &#34;auction_category_id&#34;: null,
+            &#34;image&#34;: [
+              {
+                &#34;src&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg&#34;,
+                &#34;height&#34;: &#34;1506&#34;,
+                &#34;width&#34;: &#34;2077&#34;
+              }
+            ],
+            &#34;logisticCost&#34;: null,
+            &#34;orderId&#34;: 3422056,
+            &#34;payLimitDate&#34;: &#34;2020-03-10 06:51:58&#34;,
+            &#34;endPrice&#34;: null,
+            &#34;serviceCharge&#34;: null,
+            &#34;totalAmount&#34;: 112.0,
+            &#34;auctionNum&#34;: 1,
+            &#34;auctionId&#34;: &#34;3827318&#34;,
+            &#34;auctionName&#34;: &#34;6第四套/第四版人民币1980年版1元一枚（天蓝冠、CR37666285、PMG 70EPQ）&#34;,
+            &#34;auctionNo&#34;: &#34;214952006&#34;,
+            &#34;endDate&#34;: &#34;2020-03-05 06:51:08&#34;,
+            &#34;from&#34;: &#34;赵涌在线&#34;
+          },
+          {
+            &#34;id&#34;: null,
+            &#34;status&#34;: null,
+            &#34;auctionType&#34;: null,
+            &#34;dealAmount&#34;: 0.0,
+            &#34;characterName&#34;: &#34;全品&#34;,
+            &#34;attentionDate&#34;: null,
+            &#34;picPath&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg!400x400&#34;,
+            &#34;deliveryType&#34;: null,
+            &#34;thumbnails&#34;: [
+              {
+                &#34;src&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg!400x400&#34;,
+                &#34;height&#34;: &#34;1506&#34;,
+                &#34;width&#34;: &#34;2077&#34;
+              }
+            ],
+            &#34;isHiddenPrice&#34;: 0,
+            &#34;mallOrderStatus&#34;: null,
+            &#34;isPoint&#34;: null,
+            &#34;consumeScore&#34;: 0,
+            &#34;unit&#34;: null,
+            &#34;tradeMethod&#34;: null,
+            &#34;expectDeliverDate&#34;: null,
+            &#34;payAt&#34;: null,
+            &#34;sendTime&#34;: null,
+            &#34;bidNumber&#34;: 0,
+            &#34;payDate&#34;: null,
+            &#34;dateText&#34;: &#34;超期1天&#34;,
+            &#34;logisticTips&#34;: null,
+            &#34;isPayable&#34;: 1,
+            &#34;isFreezed&#34;: 0,
+            &#34;unpayableTips&#34;: null,
+            &#34;exitBan&#34;: 0,
+            &#34;logisticsNo&#34;: null,
+            &#34;countryId&#34;: null,
+            &#34;provinceId&#34;: null,
+            &#34;cityId&#34;: null,
+            &#34;address&#34;: null,
+            &#34;highlight&#34;: false,
+            &#34;limit&#34;: false,
+            &#34;auction_category_id&#34;: null,
+            &#34;image&#34;: [
+              {
+                &#34;src&#34;: &#34;https://img3.zhaoonline.com/2017/15/252951005A.jpg&#34;,
+                &#34;height&#34;: &#34;1506&#34;,
+                &#34;width&#34;: &#34;2077&#34;
+              }
+            ],
+            &#34;logisticCost&#34;: null,
+            &#34;orderId&#34;: 3422060,
+            &#34;payLimitDate&#34;: &#34;2020-03-10 06:51:59&#34;,
+            &#34;endPrice&#34;: null,
+            &#34;serviceCharge&#34;: null,
+            &#34;totalAmount&#34;: 112.0,
+            &#34;auctionNum&#34;: 1,
+            &#34;auctionId&#34;: &#34;3827339&#34;,
+            &#34;auctionName&#34;: &#34;27第四套/第四版人民币1980年版1元一枚（天蓝冠、CR37666285、PMG 91EPQ）&#34;,
+            &#34;auctionNo&#34;: &#34;214952027&#34;,
+            &#34;endDate&#34;: &#34;2020-03-05 06:51:08&#34;,
+            &#34;from&#34;: &#34;赵涌在线&#34;
+          }
+        ]
+      }
+    ],
+    &#34;bookingStatistics&#34;: null
+  }
+}</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+                <div style="overflow: auto">
+                
+                
+                <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        headers.Content-Type
+                      </td>
+                      <td>equals</td>
+                      <td>application/json;charset=UTF-8</td>
+                      <td>application/json;charset=UTF-8</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.status
+                      </td>
+                      <td>equals</td>
+                      <td>SUCCESS</td>
+                      <td>SUCCESS</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.detail
+                      </td>
+                      <td>equals</td>
+                      <td>请求数据成功</td>
+                      <td>请求数据成功</td>
+                    </tr>
+                    
+                </table>
+                
+
+                
+                
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>17011</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>150.01</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>145.614</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+  </table>
+  
+</body>

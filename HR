@@ -17,3 +17,6 @@ httpie
 
 coveralls
 Travis CI
+
+1.登陆的参数化，必须在testsuites文件夹下
+2.parameters需要再testcase里，不能在config中

@@ -1,0 +1,11 @@
+config:
+    name: zhaoonline login
+    base_url: http://ft1.mobile.zhaoonline.com
+#    export:
+#      - username
+    variables: {}
+
+teststeps:
+-
+    name: login
+    api: ../api/login.yml

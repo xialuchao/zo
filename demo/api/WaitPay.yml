@@ -1,0 +1,32 @@
+config:
+    name: testcase description
+    variables: {}
+teststeps:
+-   name: /user/3_3/order/query
+    request:
+        headers:
+            Authorization: ${ENV(Authorization)}
+            Content-Type: application/json
+            User-Agent: okhttp/3.12.0
+            X-Zhao-AppId: ${ENV(X-Zhao-AppId)}
+            X-Zhao-DeviceId: ${ENV(X-Zhao-DeviceId)}
+            X-Zhao-OSInfo: '{"os":"android","osv":"7.1.2","deviceToken":"1a0018970aed6e7f43e","appVer":"4.2.16.1","make":"Hisense","model":"HLTE200T"}'
+            X-Zhao-UserId: $username
+            charset: utf-8
+        method: GET
+        params:
+            queryMall: 'true'
+        url: http://ft1.mobile.zhaoonline.com/user/3_3/order/query
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+    -   eq:
+        - content.status
+        - SUCCESS
+    -   eq:
+        - content.detail
+        - 请求数据成功

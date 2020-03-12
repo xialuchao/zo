@@ -1,0 +1,1596 @@
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> - TestReport</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      color: #333;
+      margin: 0 auto;
+      width: 960px;
+    }
+    #summary {
+      width: 960px;
+      margin-bottom: 20px;
+    }
+    #summary th {
+      background-color: skyblue;
+      padding: 5px 12px;
+    }
+    #summary td {
+      background-color: lightblue;
+      text-align: center;
+      padding: 4px 8px;
+    }
+    .details {
+      width: 960px;
+      margin-bottom: 20px;
+    }
+    .details th {
+      background-color: skyblue;
+      padding: 5px 12px;
+    }
+    .details tr .passed {
+      background-color: lightgreen;
+    }
+    .details tr .failed {
+      background-color: red;
+    }
+    .details tr .unchecked {
+      background-color: gray;
+    }
+    .details td {
+      background-color: lightblue;
+      padding: 5px 12px;
+    }
+    .details .detail {
+      background-color: lightgrey;
+      font-size: smaller;
+      padding: 5px 10px;
+      line-height: 20px;
+      text-align: left;
+    }
+    .details .success {
+      background-color: greenyellow;
+    }
+    .details .error {
+      background-color: red;
+    }
+    .details .failure {
+      background-color: salmon;
+    }
+    .details .skipped {
+      background-color: gray;
+    }
+
+    .button {
+      font-size: 1em;
+      padding: 6px;
+      width: 4em;
+      text-align: center;
+      background-color: #06d85f;
+      border-radius: 20px/50px;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+    }
+    a.button{
+      color: gray;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .button:hover {
+      background: #2cffbd;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.7);
+      transition: opacity 500ms;
+      visibility: hidden;
+      opacity: 0;
+      line-height: 25px;
+    }
+    .overlay:target {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .popup {
+      margin: 70px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      width: 50%;
+      position: relative;
+      transition: all 3s ease-in-out;
+    }
+
+    .popup h2 {
+      margin-top: 0;
+      color: #333;
+      font-family: Tahoma, Arial, sans-serif;
+    }
+    .popup .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      transition: all 200ms;
+      font-size: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #333;
+    }
+    .popup .close:hover {
+      color: #06d85f;
+    }
+    .popup .content {
+      max-height: 80%;
+      overflow: auto;
+      text-align: left;
+    }
+    .popup .separator {
+      color:royalblue
+    }
+
+    @media screen and (max-width: 700px) {
+      .box {
+        width: 70%;
+      }
+      .popup {
+        width: 70%;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>Test Report: </h1>
+
+  <h2>Summary</h2>
+  <table id="summary">
+    <tr>
+      <th>START AT</th>
+      <td colspan="4">2020-03-06T09:47:07.246687</td>
+    </tr>
+    <tr>
+      <th>DURATION</th>
+      <td colspan="4">0.157 seconds</td>
+    </tr>
+    <tr>
+      <th>PLATFORM</th>
+      <td>HttpRunner 2.5.7 </td>
+      <td>CPython 3.6.5 </td>
+      <td colspan="2">Windows-7-6.1.7601-SP1</td>
+    </tr>
+    <tr>
+      <th>STAT</th>
+      <th colspan="2">TESTCASES (success/fail)</th>
+      <th colspan="2">TESTSTEPS (success/fail/error/skip)</th>
+    </tr>
+    <tr>
+      <td>total (details) =></td>
+      <td colspan="2">1 (0/1)</td>
+      <td colspan="2">3 (2/1/0/0)</td>
+    </tr>
+  </table>
+
+  <h2>Details</h2>
+
+  
+  
+  <h3>testcase description</h3>
+  <table id="suite_1" class="details">
+    <tr>
+      <td>TOTAL: 3</td>
+      <td>SUCCESS: 2</td>
+      <td>FAILED: 1</td>
+      <td>ERROR: 0</td>
+      <td>SKIPPED: 0</td>
+    </tr>
+    <tr>
+      <th>Status</th>
+      <th colspan="2">Name</th>
+      <th>Response Time</th>
+      <th>Detail</th>
+    </tr>
+
+    
+    
+    
+    <tr id="record_1_1">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">/userInfo/services/noticeNum</td>
+      <td style="text-align:center;width:6em;">60.00 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_1_1">log-1</a>
+        <div id="popup_log_1_1_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_1_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: /userInfo/services/noticeNum</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                            http://ft1.mobile.zhaoonline.com/userInfo/services/noticeNum
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                            GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;Mozilla/5.0 (Linux; U; Android 7.1.2; zh-cn; HLTE200T Build/N2G47H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;Accept&#34;: &#34;*/*&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Authorization&#34;: &#34;ZHAO Taz5zQIH7zc83MwcTp6:+mZ1LvOOj+Y0lKEYxuK0NZVV94U=&#34;,
+  &#34;Content-Type&#34;: &#34;application/json&#34;,
+  &#34;X-Zhao-AppId&#34;: &#34;fKhnk3UwbjhLP5NuFNQm5W&#34;,
+  &#34;X-Zhao-DeviceId&#34;: &#34;3862ae3f76818a4a&#34;,
+  &#34;X-Zhao-OSInfo&#34;: &#34;{\&#34;os\&#34;:\&#34;android\&#34;,\&#34;osv\&#34;:\&#34;7.1.2\&#34;,\&#34;deviceToken\&#34;:\&#34;\&#34;,\&#34;appVer\&#34;:\&#34;4.2.16.1\&#34;,\&#34;make\&#34;:\&#34;Hisense\&#34;,\&#34;model\&#34;:\&#34;HLTE200T\&#34;}&#34;,
+  &#34;X-Zhao-UserId&#34;: &#34;1000111&#34;,
+  &#34;charset&#34;: &#34;utf-8&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://ft1.mobile.zhaoonline.com/userInfo/services/noticeNum
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Server&#34;: &#34;nginx/1.8.1&#34;,
+  &#34;Date&#34;: &#34;Fri, 06 Mar 2020 16:50:30 GMT&#34;,
+  &#34;Content-Type&#34;: &#34;application/json;charset=UTF-8&#34;,
+  &#34;Transfer-Encoding&#34;: &#34;chunked&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;
+}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json;charset=UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>{
+  &#34;status&#34;: &#34;SUCCESS&#34;,
+  &#34;detail&#34;: &#34;请求数据成功&#34;,
+  &#34;data&#34;: {
+    &#34;msgNum&#34;: 0,
+    &#34;noticeNum&#34;: 169,
+    &#34;userMsgNum&#34;: 347
+  }
+}</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+                <div style="overflow: auto">
+                
+                
+                <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        headers.Content-Type
+                      </td>
+                      <td>equals</td>
+                      <td>application/json;charset=UTF-8</td>
+                      <td>application/json;charset=UTF-8</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.status
+                      </td>
+                      <td>equals</td>
+                      <td>SUCCESS</td>
+                      <td>SUCCESS</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.detail
+                      </td>
+                      <td>equals</td>
+                      <td>请求数据成功</td>
+                      <td>请求数据成功</td>
+                    </tr>
+                    
+                </table>
+                
+
+                
+                
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>103</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>60.0</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>30.378</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_2">
+      <th class="success" style="width:5em;">success</th>
+      <td colspan="2">/subscribe/getUserCategories</td>
+      <td style="text-align:center;width:6em;">15.00 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_2_1">log-1</a>
+        <div id="popup_log_1_2_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_2_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: /subscribe/getUserCategories</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                            http://ft1.mobile.zhaoonline.com/subscribe/getUserCategories
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                            GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;Mozilla/5.0 (Linux; U; Android 7.1.2; zh-cn; HLTE200T Build/N2G47H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;Accept&#34;: &#34;*/*&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Authorization&#34;: &#34;ZHAO Taz5zQIH7zc83MwcTp6:/Pf4bRehAFT/+xmMbQCO2e0yJtM=&#34;,
+  &#34;Content-Type&#34;: &#34;application/json&#34;,
+  &#34;X-Zhao-AppId&#34;: &#34;fKhnk3UwbjhLP5NuFNQm5W&#34;,
+  &#34;X-Zhao-DeviceId&#34;: &#34;3862ae3f76818a4a&#34;,
+  &#34;X-Zhao-OSInfo&#34;: &#34;{\&#34;os\&#34;:\&#34;android\&#34;,\&#34;osv\&#34;:\&#34;7.1.2\&#34;,\&#34;deviceToken\&#34;:\&#34;\&#34;,\&#34;appVer\&#34;:\&#34;4.2.16.1\&#34;,\&#34;make\&#34;:\&#34;Hisense\&#34;,\&#34;model\&#34;:\&#34;HLTE200T\&#34;}&#34;,
+  &#34;X-Zhao-UserId&#34;: &#34;1000111&#34;,
+  &#34;charset&#34;: &#34;utf-8&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://ft1.mobile.zhaoonline.com/subscribe/getUserCategories
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Server&#34;: &#34;nginx/1.8.1&#34;,
+  &#34;Date&#34;: &#34;Fri, 06 Mar 2020 16:50:30 GMT&#34;,
+  &#34;Content-Type&#34;: &#34;application/json;charset=UTF-8&#34;,
+  &#34;Transfer-Encoding&#34;: &#34;chunked&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;
+}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json;charset=UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>{
+  &#34;status&#34;: &#34;SUCCESS&#34;,
+  &#34;detail&#34;: &#34;请求数据成功&#34;,
+  &#34;data&#34;: []
+}</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+                <div style="overflow: auto">
+                
+                
+                <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        headers.Content-Type
+                      </td>
+                      <td>equals</td>
+                      <td>application/json;charset=UTF-8</td>
+                      <td>application/json;charset=UTF-8</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.status
+                      </td>
+                      <td>equals</td>
+                      <td>SUCCESS</td>
+                      <td>SUCCESS</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.detail
+                      </td>
+                      <td>equals</td>
+                      <td>请求数据成功</td>
+                      <td>请求数据成功</td>
+                    </tr>
+                    
+                </table>
+                
+
+                
+                
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>60</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>15.0</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>13.71</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+
+      </td>
+    </tr>
+  
+    
+    
+    <tr id="record_1_3">
+      <th class="failure" style="width:5em;">failure</th>
+      <td colspan="2">/search/</td>
+      <td style="text-align:center;width:6em;">30.00 ms</td>
+      <td class="detail">
+
+        
+        
+        <a class="button" href="#popup_log_1_3_1">log-1</a>
+        <div id="popup_log_1_3_1" class="overlay">
+          <div class="popup">
+            <h2>Request and Response data</h2>
+            <a class="close" href="#record_1_3_1">&times;</a>
+
+            <div class="content">
+              <h3>Name: /search/</h3>
+
+              
+
+              
+
+              <h3>Request:</h3>
+              <div style="overflow: auto">
+                <table>
+                  
+                    <tr>
+                      <th>url</th>
+                      <td>
+                        
+                            http://ft1.search.zhaoonline.com/search/?order=popularity&orderBy=desc&page=1&perPage=10&stage=2
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>method</th>
+                      <td>
+                        
+                            GET
+                        
+                      </td>
+                    </tr>
+                  
+                    <tr>
+                      <th>headers</th>
+                      <td>
+                        
+                            <pre>{
+  &#34;User-Agent&#34;: &#34;Mozilla/5.0 (Linux; U; Android 7.1.2; zh-cn; HLTE200T Build/N2G47H) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30&#34;,
+  &#34;Accept-Encoding&#34;: &#34;gzip, deflate&#34;,
+  &#34;Accept&#34;: &#34;*/*&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;,
+  &#34;Authorization&#34;: &#34;ZHAO Taz5zQIH7zc83MwcTp6:8PdwyxnD75f1dbt2XYxU+BHHB5g=&#34;,
+  &#34;Content-Type&#34;: &#34;application/json&#34;,
+  &#34;X-Zhao-AppId&#34;: &#34;fKhnk3UwbjhLP5NuFNQm5W&#34;,
+  &#34;X-Zhao-DeviceId&#34;: &#34;3862ae3f76818a4a&#34;,
+  &#34;X-Zhao-OSInfo&#34;: &#34;{\&#34;os\&#34;:\&#34;android\&#34;,\&#34;osv\&#34;:\&#34;7.1.2\&#34;,\&#34;deviceToken\&#34;:\&#34;\&#34;,\&#34;appVer\&#34;:\&#34;4.2.16.1\&#34;,\&#34;make\&#34;:\&#34;Hisense\&#34;,\&#34;model\&#34;:\&#34;HLTE200T\&#34;}&#34;,
+  &#34;X-Zhao-UserId&#34;: &#34;1000111&#34;,
+  &#34;charset&#34;: &#34;utf-8&#34;
+}</pre>
+                        
+                      </td>
+                    </tr>
+                  
+                </table>
+              </div>
+
+              <h3>Response:</h3>
+              <div style="overflow: auto">
+                <table>
+                    
+                      <tr>
+                        <th>ok</th>
+                        <td>
+                          
+                            True
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>url</th>
+                        <td>
+                          
+                            http://ft1.search.zhaoonline.com/search/?order=popularity&orderBy=desc&page=1&perPage=10&stage=2
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>status_code</th>
+                        <td>
+                          
+                            200
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>reason</th>
+                        <td>
+                          
+                            OK
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>cookies</th>
+                        <td>
+                          
+                            {}
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>encoding</th>
+                        <td>
+                          
+                            UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>headers</th>
+                        <td>
+                          
+                            <pre>{
+  &#34;Server&#34;: &#34;nginx/1.8.1&#34;,
+  &#34;Date&#34;: &#34;Fri, 06 Mar 2020 16:50:30 GMT&#34;,
+  &#34;Content-Type&#34;: &#34;application/json;charset=UTF-8&#34;,
+  &#34;Content-Length&#34;: &#34;8098&#34;,
+  &#34;Connection&#34;: &#34;keep-alive&#34;
+}</pre>
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>content_type</th>
+                        <td>
+                          
+                            application/json;charset=UTF-8
+                          
+                        </td>
+                      </tr>
+                    
+                      <tr>
+                        <th>body</th>
+                        <td>
+                          
+                            
+                              <pre>{
+  &#34;took&#34;: 9,
+  &#34;timeOut&#34;: false,
+  &#34;total&#34;: 132,
+  &#34;list&#34;: [
+    {
+      &#34;auctionNo&#34;: &#34;213545012&#34;,
+      &#34;title&#34;: &#34;金银币服务费12&#34;,
+      &#34;categoryPath&#34;: &#34;157/180/185/1852/18523&#34;,
+      &#34;endAt&#34;: &#34;2027-08-31T10:05:30Z&#34;,
+      &#34;startAt&#34;: &#34;2017-08-31T07:07:07Z&#34;,
+      &#34;stage&#34;: &#34;2&#34;,
+      &#34;auctionType&#34;: &#34;1&#34;,
+      &#34;defaultSort&#34;: &#34;1&#34;,
+      &#34;from&#34;: &#34;zhaoonline&#34;,
+      &#34;popularity&#34;: 309,
+      &#34;id&#34;: 3804638,
+      &#34;category&#34;: 18523,
+      &#34;character&#34;: 11,
+      &#34;serviceRate&#34;: 11,
+      &#34;buyServiceFeeThreshold&#34;: &#34;110-12&#34;,
+      &#34;specialTopicId&#34;: 0,
+      &#34;recommend&#34;: 99,
+      &#34;pv&#34;: 0,
+      &#34;price&#34;: 1100.0,
+      &#34;hasPayDeposit&#34;: false,
+      &#34;isTrust&#34;: 0,
+      &#34;ratingScore&#34;: 0,
+      &#34;thumbnails&#34;: [
+        {
+          &#34;width&#34;: 166,
+          &#34;url&#34;: &#34;https://img3.zhaoonline.com/2017/36/274416003A.jpg!166&#34;,
+          &#34;height&#34;: 120
+        },
+        {
+          &#34;width&#34;: 166,
+          &#34;url&#34;: &#34;https://img3.zhaoonline.com/2017/33/272312006A.jpg!166&#34;,
+          &#34;height&#34;: 120
+        }
+      ],
+      &#34;images&#34;: [
+        {
+          &#34;width&#34;: 2077,
+          &#34;url&#34;: &#34;https://img3.zhaoonline.com/2017/36/274416003A.jpg&#34;,
+          &#34;height&#34;: 1506
+        },
+        {
+          &#34;width&#34;: 2077,
+          &#34;url&#34;: &#34;https://img3.zhaoonline.com/2017/33/272312006A.jpg&#34;,
+          &#34;height&#34;: 1506
+        }
+      ],
+      &#34;serviceFee&#34;: 121.0
+    },
+    {
+      &#34;auctionNo&#34;: &#34;213542002&#34;,
+      &#34;title&#34;: &#34;英文站服务费2&#34;,
+      &#34;categoryPath&#34;: &#34;100/101/143/145&#34;,
+      &#34;endAt&#34;: &#34;2020-07-08T16:00:00Z&#34;,
+      &#34;startAt&#34;: &#34;2017-08-30T09:01:00Z&#34;,
+      &#34;stage&#34;: &#34;2&#34;,
+      &#34;auctionType&#34;: &#34;1&#34;,
+      &#34;defaultSort&#34;: &#34;1&#34;,
+      &#34;from&#34;: &#34;zhaoonline&#34;,
+      &#34;popularity&#34;: 125,
+      &#34;id&#34;: 3804576,
+      &#34;category&#34;: 145,
+      &#34;character&#34;: 3,
+      &#34;serviceRate&#34;: 7,
+      &#34;buyServiceFeeThreshold&#34;: &#34;170-12&#34;,
+      &#34;specialTopicId&#34;: 0,
+      &#34;recommend&#34;: 99,
+      &#34;pv&#34;: 0,
+      &#34;price&#34;: 250.0,
+      &#34;hasPayDeposit&#34;: false,
+      &#34;isTrust&#34;: 0,
+      &#34;ratingScore&#34;: 0,
+      &#34;thumbnails&#34;: [
+        {
+          &#34;width&#34;: 166,
+          &#34;url&#34;: &#34;https://img3.zhaoonline.com/2017/33/272312006A.jpg!166&#34;,
+          &#34;height&#34;: 120
+        }
+      ],
+      &#34;images&#34;: [
+        {
+          &#34;width&#34;: 2077,
+          &#34;url&#34;: &#34;https://img3.zhaoonline.com/2017/33/272312006A.jpg&#34;,
+          &#34;height&#34;: 1506
+        }
+      ],
+      &#34;serviceFee&#34;: 17.5
+    },
+    {
+      &#34;auctionNo&#34;: &#34;214426003&#34;,
+      &#34;title&#34;: &#34;T46 庚申年 新全&#34;,
+      &#34;categoryPath&#34;: &#34;100/101/143/173&#34;,
+      &#34;endAt&#34;: &#34;2020-07-08T16:00:00Z&#34;,
+      &#34;startAt&#34;: &#34;2018-09-11T07:12:00Z&#34;,
+      &#34;stage&#34;: &#34;2&#34;,
+      &#34;auctionType&#34;: &#34;1&#34;,
+      &#34;defaultSort&#34;: &#34;1&#34;,
+      &#34;from&#34;: &#34;zhaoonline&#34;,
+      &#34;popularity&#34;: 83,
+      &#34;id&#34;: 3818361,
+      &#34;category&#34;: 173,
+      &#34;character&#34;: 2,
+      &#34;serviceRate&#34;: 7,
+      &#34;buyServiceFeeThreshold&#34;: &#34;170-12&#34;,
+      &#34;specialTopicId&#34;: 0,
+      &#34;recommend&#34;: 99,
+      &#34;pv&#34;: 0,
+      &#34;price&#34;: 72.0,
+      &#34;hasPayDeposit&#34;: false,
+      &#34;isTrust&#34;: 0,
+      &#34;ratingScore&#34;: 0,
+      &#34;thumbnails&#34;: [
+        {
+          &#34;width&#34;: 166,
+          &#34;url&#34;: &#34;https://img3.zhaoonline.com/2018/32/313346003A.jpg!166&#34;,
+          &#34;height&#34;: 120
+        }
+      ],
+      &#34;images&#34;: [
+        {
+          &#34;width&#34;: 2077,
+          &#34;url&#34;: &#34;https://img3.zhaoonline.com/2018/32/313346003A.jpg&#34;,
+          &#34;height&#34;: 1506
+        }
+      ],
+      &#34;serviceFee&#34;: 12.0
+    },
+    {
+      &#34;auctionNo&#34;: &#34;213607002&#34;,
+      &#34;title&#34;: &#34;J87(2-2)郭沫若带边带厂铭新一枚&#34;,
+      &#34;categoryPath&#34;: &#34;100/101/143/173&#34;,
+      &#34;endAt&#34;: &#34;2024-12-02T16:00:00Z&#34;,
+      &#34;startAt&#34;: &#34;2017-12-15T06:14:00Z&#34;,
+      &#34;stage&#34;: &#34;2&#34;,
+      &#34;auctionType&#34;: &#34;1&#34;,
+      &#34;defaultSort&#34;: &#34;1&#34;,
+      &#34;from&#34;: &#34;zhaoonline&#34;,
+      &#34;popularity&#34;: 17,
+      &#34;id&#34;: 3805415,
+      &#34;category&#34;: 173,
+      &#34;character&#34;: 2,
+      &#34;serviceRate&#34;: 7,
+      &#34;buyServiceFeeThreshold&#34;: &#34;170-12&#34;,
+      &#34;specialTopicId&#34;: 0,
+      &#34;recommend&#34;: 99,
+      &#34;pv&#34;: 0,
+      &#34;price&#34;: 20.0,
+      &#34;hasPayDeposit&#34;: false,
+      &#34;isTrust&#34;: 0,
+      &#34;ratingScore&#34;: 0,
+      &#34;thumbnails&#34;: [
+        {
+          &#34;width&#34;: 166,
+          &#34;url&#34;: &#34;https://img3.zhaoonline.com/2017/50/213607002A.jpg!166&#34;,
+          &#34;height&#34;: 282
+        }
+      ],
+      &#34;images&#34;: [
+        {
+          &#34;width&#34;: 1242,
+          &#34;url&#34;: &#34;https://img3.zhaoonline.com/2017/50/213607002A.jpg&#34;,
+          &#34;height&#34;: 2111
+        }
+      ],
+      &#34;serviceFee&#34;: 12.0
+    },
+    {
+      &#34;auctionNo&#34;: &#34;213545009&#34;,
+      &#34;title&#34;: &#34;金银币服务费9&#34;,
+      &#34;categoryPath&#34;: &#34;157/180/183/1831/18313&#34;,
+      &#34;endAt&#34;: &#34;2027-08-31T10:04:00Z&#34;,
+      &#34;startAt&#34;: &#34;2017-08-31T07:07:07Z&#34;,
+      &#34;stage&#34;: &#34;2&#34;,
+      &#34;auctionType&#34;: &#34;1&#34;,
+      &#34;defaultSort&#34;: &#34;1&#34;,
+      &#34;from&#34;: &#34;zhaoonline&#34;,
+      &#34;popularity&#34;: 14,
+      &#34;id&#34;: 3804635,
+      &#34;category&#34;: 18313,
+      &#34;character&#34;: 12,
+      &#34;serviceRate&#34;: 5,
+      &#34;buyServiceFeeThreshold&#34;: &#34;240-12&#34;,
+      &#34;specialTopicId&#34;: 0,
+      &#34;recommend&#34;: 99,
+      &#34;pv&#34;: 0,
+      &#34;price&#34;: 11.0,
+      &#34;hasPayDeposit&#34;: false,
+      &#34;isTrust&#34;: 0,
+      &#34;ratingScore&#34;: 0,
+      &#34;thumbnails&#34;: [
+        {
+          &#34;width&#34;: 166,
+          &#34;url&#34;: &#34;https://img3.zhaoonline.com/2017/36/274416003A.jpg!166&#34;,
+          &#34;height&#34;: 120
+        },
+        {
+          &#34;width&#34;: 166,
+          &#34;url&#34;: &#34;https://img3.zhaoonline.com/2017/33/272312006A.jpg!166&#34;,
+          &#34;height&#34;: 120
+        }
+      ],
+      &#34;images&#34;: [
+        {
+          &#34;width&#34;: 2077,
+          &#34;url&#34;: &#34;https://img3.zhaoonline.com/2017/36/274416003A.jpg&#34;,
+          &#34;height&#34;: 1506
+        },
+        {
+          &#34;width&#34;: 2077,
+          &#34;url&#34;: &#34;https://img3.zhaoonline.com/2017/33/272312006A.jpg&#34;,
+          &#34;height&#34;: 1506
+        }
+      ],
+      &#34;serviceFee&#34;: 12.0
+    },
+    {
+      &#34;auctionNo&#34;: &#34;214426005&#34;,
+      &#34;title&#34;: &#34;T46&#34;,
+      &#34;categoryPath&#34;: &#34;100/101/143/173&#34;,
+      &#34;endAt&#34;: &#34;2024-07-04T16:00:00Z&#34;,
+      &#34;startAt&#34;: &#34;2018-09-11T07:12:00Z&#34;,
+      &#34;stage&#34;: &#34;2&#34;,
+      &#34;auctionType&#34;: &#34;1&#34;,
+      &#34;defaultSort&#34;: &#34;1&#34;,
+      &#34;from&#34;: &#34;zhaoonline&#34;,
+      &#34;popularity&#34;: 14,
+      &#34;id&#34;: 3818363,
+      &#34;category&#34;: 173,
+      &#34;character&#34;: 5,
+      &#34;serviceRate&#34;: 7,
+      &#34;buyServiceFeeThreshold&#34;: &#34;170-12&#34;,
+      &#34;specialTopicId&#34;: 0,
+      &#34;recommend&#34;: 99,
+      &#34;pv&#34;: 0,
+      &#34;price&#34;: 16.0,
+      &#34;hasPayDeposit&#34;: false,
+      &#34;isTrust&#34;: 0,
+      &#34;ratingScore&#34;: 0,
+      &#34;thumbnails&#34;: [
+        {
+          &#34;width&#34;: 166,
+          &#34;url&#34;: &#34;https://img3.zhaoonline.com/2018/32/313346003A.jpg!166&#34;,
+          &#34;height&#34;: 120
+        }
+      ],
+      &#34;images&#34;: [
+        {
+          &#34;width&#34;: 2077,
+          &#34;url&#34;: &#34;https://img3.zhaoonline.com/2018/32/313346003A.jpg&#34;,
+          &#34;height&#34;: 1506
+        }
+      ],
+      &#34;serviceFee&#34;: 12.0
+    },
+    {
+      &#34;auctionNo&#34;: &#34;213537010&#34;,
+      &#34;title&#34;: &#34;测试服务费10&#34;,
+      &#34;categoryPath&#34;: &#34;100/101/143/173&#34;,
+      &#34;endAt&#34;: &#34;2027-08-29T10:04:30Z&#34;,
+      &#34;startAt&#34;: &#34;2017-08-29T08:27:00Z&#34;,
+      &#34;stage&#34;: &#34;2&#34;,
+      &#34;auctionType&#34;: &#34;1&#34;,
+      &#34;defaultSort&#34;: &#34;1&#34;,
+      &#34;from&#34;: &#34;zhaoonline&#34;,
+      &#34;popularity&#34;: 10,
+      &#34;id&#34;: 3804544,
+      &#34;category&#34;: 173,
+      &#34;character&#34;: 3,
+      &#34;serviceRate&#34;: 7,
+      &#34;buyServiceFeeThreshold&#34;: &#34;170-12&#34;,
+      &#34;specialTopicId&#34;: 0,
+      &#34;recommend&#34;: 99,
+      &#34;pv&#34;: 0,
+      &#34;price&#34;: 13.0,
+      &#34;hasPayDeposit&#34;: false,
+      &#34;isTrust&#34;: 0,
+      &#34;ratingScore&#34;: 0,
+      &#34;thumbnails&#34;: [
+        {
+          &#34;width&#34;: 166,
+          &#34;url&#34;: &#34;https://img3.zhaoonline.com/2017/33/272312006A.jpg!166&#34;,
+          &#34;height&#34;: 120
+        }
+      ],
+      &#34;images&#34;: [
+        {
+          &#34;width&#34;: 2077,
+          &#34;url&#34;: &#34;https://img3.zhaoonline.com/2017/33/272312006A.jpg&#34;,
+          &#34;height&#34;: 1506
+        }
+      ],
+      &#34;serviceFee&#34;: 12.0
+    },
+    {
+      &#34;auctionNo&#34;: &#34;214426004&#34;,
+      &#34;title&#34;: &#34;T46猴带边新全&#34;,
+      &#34;categoryPath&#34;: &#34;100/101/143/173&#34;,
+      &#34;endAt&#34;: &#34;2020-07-08T16:00:00Z&#34;,
+      &#34;startAt&#34;: &#34;2018-09-11T07:12:00Z&#34;,
+      &#34;stage&#34;: &#34;2&#34;,
+      &#34;auctionType&#34;: &#34;1&#34;,
+      &#34;defaultSort&#34;: &#34;1&#34;,
+      &#34;from&#34;: &#34;zhaoonline&#34;,
+      &#34;popularity&#34;: 7,
+      &#34;id&#34;: 3818362,
+      &#34;category&#34;: 173,
+      &#34;character&#34;: 3,
+      &#34;serviceRate&#34;: 7,
+      &#34;buyServiceFeeThreshold&#34;: &#34;170-12&#34;,
+      &#34;specialTopicId&#34;: 0,
+      &#34;recommend&#34;: 99,
+      &#34;pv&#34;: 0,
+      &#34;price&#34;: 14.0,
+      &#34;hasPayDeposit&#34;: false,
+      &#34;isTrust&#34;: 0,
+      &#34;ratingScore&#34;: 0,
+      &#34;thumbnails&#34;: [
+        {
+          &#34;width&#34;: 166,
+          &#34;url&#34;: &#34;https://img3.zhaoonline.com/2018/32/313346003A.jpg!166&#34;,
+          &#34;height&#34;: 120
+        }
+      ],
+      &#34;images&#34;: [
+        {
+          &#34;width&#34;: 2077,
+          &#34;url&#34;: &#34;https://img3.zhaoonline.com/2018/32/313346003A.jpg&#34;,
+          &#34;height&#34;: 1506
+        }
+      ],
+      &#34;serviceFee&#34;: 12.0
+    },
+    {
+      &#34;auctionNo&#34;: &#34;213545013&#34;,
+      &#34;title&#34;: &#34;金银币服务费13&#34;,
+      &#34;categoryPath&#34;: &#34;157/180/185/1852/18524&#34;,
+      &#34;endAt&#34;: &#34;2027-08-31T10:06:00Z&#34;,
+      &#34;startAt&#34;: &#34;2017-08-31T07:07:07Z&#34;,
+      &#34;stage&#34;: &#34;2&#34;,
+      &#34;auctionType&#34;: &#34;1&#34;,
+      &#34;defaultSort&#34;: &#34;1&#34;,
+      &#34;from&#34;: &#34;zhaoonline&#34;,
+      &#34;popularity&#34;: 4,
+      &#34;id&#34;: 3804639,
+      &#34;category&#34;: 18524,
+      &#34;character&#34;: 11,
+      &#34;serviceRate&#34;: 11,
+      &#34;buyServiceFeeThreshold&#34;: &#34;110-12&#34;,
+      &#34;specialTopicId&#34;: 0,
+      &#34;recommend&#34;: 99,
+      &#34;pv&#34;: 0,
+      &#34;price&#34;: 3.0,
+      &#34;hasPayDeposit&#34;: false,
+      &#34;isTrust&#34;: 0,
+      &#34;ratingScore&#34;: 0,
+      &#34;thumbnails&#34;: [
+        {
+          &#34;width&#34;: 166,
+          &#34;url&#34;: &#34;https://img3.zhaoonline.com/2017/36/274416003A.jpg!166&#34;,
+          &#34;height&#34;: 120
+        },
+        {
+          &#34;width&#34;: 166,
+          &#34;url&#34;: &#34;https://img3.zhaoonline.com/2017/33/272312006A.jpg!166&#34;,
+          &#34;height&#34;: 120
+        }
+      ],
+      &#34;images&#34;: [
+        {
+          &#34;width&#34;: 2077,
+          &#34;url&#34;: &#34;https://img3.zhaoonline.com/2017/36/274416003A.jpg&#34;,
+          &#34;height&#34;: 1506
+        },
+        {
+          &#34;width&#34;: 2077,
+          &#34;url&#34;: &#34;https://img3.zhaoonline.com/2017/33/272312006A.jpg&#34;,
+          &#34;height&#34;: 1506
+        }
+      ],
+      &#34;serviceFee&#34;: 12.0
+    },
+    {
+      &#34;auctionNo&#34;: &#34;213545015&#34;,
+      &#34;title&#34;: &#34;金银币服务费15&#34;,
+      &#34;categoryPath&#34;: &#34;157/180/185/1852/18526&#34;,
+      &#34;endAt&#34;: &#34;2027-08-31T10:07:00Z&#34;,
+      &#34;startAt&#34;: &#34;2017-08-31T07:07:07Z&#34;,
+      &#34;stage&#34;: &#34;2&#34;,
+      &#34;auctionType&#34;: &#34;1&#34;,
+      &#34;defaultSort&#34;: &#34;1&#34;,
+      &#34;from&#34;: &#34;zhaoonline&#34;,
+      &#34;popularity&#34;: 1,
+      &#34;id&#34;: 3804641,
+      &#34;category&#34;: 18526,
+      &#34;character&#34;: 11,
+      &#34;serviceRate&#34;: 11,
+      &#34;buyServiceFeeThreshold&#34;: &#34;110-12&#34;,
+      &#34;specialTopicId&#34;: 0,
+      &#34;recommend&#34;: 99,
+      &#34;pv&#34;: 0,
+      &#34;price&#34;: 1.0,
+      &#34;hasPayDeposit&#34;: false,
+      &#34;isTrust&#34;: 0,
+      &#34;ratingScore&#34;: 0,
+      &#34;thumbnails&#34;: [
+        {
+          &#34;width&#34;: 166,
+          &#34;url&#34;: &#34;https://img3.zhaoonline.com/2017/36/274416003A.jpg!166&#34;,
+          &#34;height&#34;: 120
+        },
+        {
+          &#34;width&#34;: 166,
+          &#34;url&#34;: &#34;https://img3.zhaoonline.com/2017/33/272312006A.jpg!166&#34;,
+          &#34;height&#34;: 120
+        }
+      ],
+      &#34;images&#34;: [
+        {
+          &#34;width&#34;: 2077,
+          &#34;url&#34;: &#34;https://img3.zhaoonline.com/2017/36/274416003A.jpg&#34;,
+          &#34;height&#34;: 1506
+        },
+        {
+          &#34;width&#34;: 2077,
+          &#34;url&#34;: &#34;https://img3.zhaoonline.com/2017/33/272312006A.jpg&#34;,
+          &#34;height&#34;: 1506
+        }
+      ],
+      &#34;serviceFee&#34;: 12.0
+    }
+  ],
+  &#34;aggregations&#34;: {
+    &#34;form&#34;: [],
+    &#34;category&#34;: [
+      {
+        &#34;key&#34;: 18311,
+        &#34;count&#34;: 93
+      },
+      {
+        &#34;key&#34;: 471,
+        &#34;count&#34;: 15
+      },
+      {
+        &#34;key&#34;: 173,
+        &#34;count&#34;: 5
+      },
+      {
+        &#34;key&#34;: 145,
+        &#34;count&#34;: 1
+      },
+      {
+        &#34;key&#34;: 172,
+        &#34;count&#34;: 1
+      },
+      {
+        &#34;key&#34;: 174,
+        &#34;count&#34;: 1
+      },
+      {
+        &#34;key&#34;: 176,
+        &#34;count&#34;: 1
+      },
+      {
+        &#34;key&#34;: 177,
+        &#34;count&#34;: 1
+      },
+      {
+        &#34;key&#34;: 464,
+        &#34;count&#34;: 1
+      },
+      {
+        &#34;key&#34;: 465,
+        &#34;count&#34;: 1
+      },
+      {
+        &#34;key&#34;: 466,
+        &#34;count&#34;: 1
+      },
+      {
+        &#34;key&#34;: 467,
+        &#34;count&#34;: 1
+      },
+      {
+        &#34;key&#34;: 468,
+        &#34;count&#34;: 1
+      },
+      {
+        &#34;key&#34;: 472,
+        &#34;count&#34;: 1
+      },
+      {
+        &#34;key&#34;: 473,
+        &#34;count&#34;: 1
+      },
+      {
+        &#34;key&#34;: 474,
+        &#34;count&#34;: 1
+      },
+      {
+        &#34;key&#34;: 475,
+        &#34;count&#34;: 1
+      },
+      {
+        &#34;key&#34;: 18313,
+        &#34;count&#34;: 1
+      },
+      {
+        &#34;key&#34;: 18523,
+        &#34;count&#34;: 1
+      },
+      {
+        &#34;key&#34;: 18524,
+        &#34;count&#34;: 1
+      },
+      {
+        &#34;key&#34;: 18525,
+        &#34;count&#34;: 1
+      },
+      {
+        &#34;key&#34;: 18526,
+        &#34;count&#34;: 1
+      }
+    ],
+    &#34;character&#34;: [
+      {
+        &#34;key&#34;: 0,
+        &#34;count&#34;: 93
+      },
+      {
+        &#34;key&#34;: 2,
+        &#34;count&#34;: 20
+      },
+      {
+        &#34;key&#34;: 3,
+        &#34;count&#34;: 11
+      },
+      {
+        &#34;key&#34;: 11,
+        &#34;count&#34;: 3
+      },
+      {
+        &#34;key&#34;: 4,
+        &#34;count&#34;: 1
+      },
+      {
+        &#34;key&#34;: 5,
+        &#34;count&#34;: 1
+      },
+      {
+        &#34;key&#34;: 8,
+        &#34;count&#34;: 1
+      },
+      {
+        &#34;key&#34;: 12,
+        &#34;count&#34;: 1
+      },
+      {
+        &#34;key&#34;: 14,
+        &#34;count&#34;: 1
+      }
+    ]
+  }
+}</pre>
+                            
+                          
+                        </td>
+                      </tr>
+                    
+                  </table>
+              </div>
+              
+
+              <h3>Validators:</h3>
+                <div style="overflow: auto">
+                
+                
+                <table>
+                    <tr>
+                      <th>check</th>
+                      <th>comparator</th>
+                      <th>expect value</th>
+                      <th>actual value</th>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        status_code
+                      </td>
+                      <td>equals</td>
+                      <td>200</td>
+                      <td>200</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        headers.Content-Type
+                      </td>
+                      <td>equals</td>
+                      <td>application/json;charset=UTF-8</td>
+                      <td>application/json;charset=UTF-8</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="failed">
+                      
+                        content.took
+                      </td>
+                      <td>equals</td>
+                      <td>6</td>
+                      <td>9</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="passed">
+                      
+                        content.timeOut
+                      </td>
+                      <td>equals</td>
+                      <td>False</td>
+                      <td>False</td>
+                    </tr>
+                    
+                    <tr>
+                      
+                      <td class="failed">
+                      
+                        content.total
+                      </td>
+                      <td>equals</td>
+                      <td>140</td>
+                      <td>132</td>
+                    </tr>
+                    
+                </table>
+                
+
+                
+                
+              </div>
+
+              <h3>Statistics:</h3>
+              <div style="overflow: auto">
+                <table>
+                  <tr>
+                      <th>content_size(bytes)</th>
+                      <td>8098</td>
+                    </tr>
+                  <tr>
+                    <th>response_time(ms)</th>
+                    <td>30.0</td>
+                  </tr>
+                  <tr>
+                    <th>elapsed(ms)</th>
+                    <td>27.698</td>
+                  </tr>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        
+
+        
+          <a class="button" href="#popup_attachment_1_3">traceback</a>
+          <div id="popup_attachment_1_3" class="overlay">
+            <div class="popup">
+              <h2>Traceback Message</h2>
+              <a class="close" href="#record_1_3">&times;</a>
+              <div class="content"><pre>Traceback (most recent call last):
+  File &#34;d:\untitled\venv\lib\site-packages\httprunner\api.py&#34;, line 63, in test
+    test_runner.run_test(test_dict)
+httprunner.exceptions.ValidationFailure: 
+validate: content.took equals 6(int)	==&gt; fail
+9(int) equals 6(int)
+
+validate: content.total equals 140(int)	==&gt; fail
+132(int) equals 140(int)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File &#34;d:\untitled\venv\lib\site-packages\httprunner\api.py&#34;, line 65, in test
+    self.fail(str(ex))
+AssertionError: 
+validate: content.took equals 6(int)	==&gt; fail
+9(int) equals 6(int)
+
+validate: content.total equals 140(int)	==&gt; fail
+132(int) equals 140(int)
+</pre></div>
+            </div>
+          </div>
+        
+
+      </td>
+    </tr>
+  
+  </table>
+  
+</body>
