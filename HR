@@ -25,3 +25,7 @@ Travis CI
 3.要加载.env环境变量，运行目录需要和.env同一级
 4.加载.env环境变量，需要安装pipenv（使用这个库来加载读取环境变量的）
 5.
+
+
+施压能力上 wrk > golang >> ab > locust
+

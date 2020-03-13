@@ -23,6 +23,7 @@ requests.get("http://www.zhaoonline.com",proxies={"http":"http://127.0.0.1:8877"
 
 swagger 是api全生命周期的解决方案，完善的生态，已经成为标准
 
+- 断言
 hamcrest 断言库
 jsonpath python库
 schema  校验（校验很多信息的时候）

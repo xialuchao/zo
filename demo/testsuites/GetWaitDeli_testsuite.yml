@@ -2,8 +2,8 @@ config:
     name: "demo parameter"
 testcases:
 -
-    name: WaitPay
-    testcase: testcases/GetWaitPay_testcase.yml
+    name: WatiDeli
+    testcase: testcases/GetWaitDeli_testcase.yml
     parameters:
         username-password:
             - ["1000111","admin123"]

@@ -1,0 +1,7 @@
+config:
+    name: zhaoonline login
+    base_url: ${ENV(base_url)}
+
+teststeps:
+    - name: WaitDeli
+      api: api/WaitDeli_api.yml
