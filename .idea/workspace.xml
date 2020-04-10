@@ -2,11 +2,75 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ead81cf-f338-4817-b18b-4b725b5704b2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/.idea/appium_AutoTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/.idea/dictionaries/Beck.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/Caps/Caps.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/Caps/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/Common/BaseDriver.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/Common/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/Common/conf_dir.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/HtmlTestReports/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/HtmlTestReports/data/behaviors.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/HtmlTestReports/data/behaviors.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/HtmlTestReports/data/categories.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/HtmlTestReports/data/categories.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/HtmlTestReports/data/packages.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/HtmlTestReports/data/suites.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/HtmlTestReports/data/suites.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/HtmlTestReports/data/timeline.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/HtmlTestReports/export/influxDbData.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/HtmlTestReports/export/mail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/HtmlTestReports/export/prometheusData.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/HtmlTestReports/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/HtmlTestReports/history/categories-trend.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/HtmlTestReports/history/duration-trend.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/HtmlTestReports/history/history-trend.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/HtmlTestReports/history/history.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/HtmlTestReports/history/retry-trend.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/HtmlTestReports/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/HtmlTestReports/plugins/behaviors/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/HtmlTestReports/plugins/packages/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/HtmlTestReports/plugins/screen-diff/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/HtmlTestReports/plugins/screen-diff/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/HtmlTestReports/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/HtmlTestReports/widgets/behaviors.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/HtmlTestReports/widgets/categories-trend.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/HtmlTestReports/widgets/categories.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/HtmlTestReports/widgets/duration-trend.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/HtmlTestReports/widgets/duration.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/HtmlTestReports/widgets/environment.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/HtmlTestReports/widgets/executors.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/HtmlTestReports/widgets/history-trend.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/HtmlTestReports/widgets/launch.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/HtmlTestReports/widgets/retry-trend.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/HtmlTestReports/widgets/severity.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/HtmlTestReports/widgets/status-chart.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/HtmlTestReports/widgets/suites.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/HtmlTestReports/widgets/summary.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/PageObjects/BasePage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/PageObjects/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/PageObjects/index_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/PageObjects/invest_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/PageObjects/login_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/PageObjects/userInfo_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/PageObjects/welcome_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/TestCases/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/TestCases/conftest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/TestCases/test_invest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/TestCases/test_login.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/TestDatas/CommonData.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/TestDatas/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/TestDatas/invest_testdatas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/TestDatas/login_testdatas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appium_AutoTest/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HR" beforeDir="false" afterPath="$PROJECT_DIR$/HR" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inter" beforeDir="false" afterPath="$PROJECT_DIR$/Inter" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,6 +104,90 @@
   <component name="FavoritesManager">
     <favorites_list name="PAGEO" />
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="conftest.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/appium_AutoTest/TestCases/conftest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#19#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/appium_AutoTest/TestCases/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="BasePage.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/appium_AutoTest/PageObjects/BasePage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="17" column="84" lean-forward="true" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="84" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index_page.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/appium_AutoTest/PageObjects/index_page.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="invest_page.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/appium_AutoTest/PageObjects/invest_page.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login_page.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/appium_AutoTest/PageObjects/login_page.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_invest.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/appium_AutoTest/TestCases/test_invest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#19#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_login.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/appium_AutoTest/TestCases/test_login.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#19#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommonData.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/appium_AutoTest/TestDatas/CommonData.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/appium_AutoTest/TestDatas/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -50,9 +198,84 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/appium_AutoTest/TestDatas/login_testdatas.py" />
+        <option value="$PROJECT_DIR$/appium_AutoTest/main.py" />
+        <option value="$PROJECT_DIR$/appium_AutoTest/TestDatas/invest_testdatas.py" />
+        <option value="$PROJECT_DIR$/appium_AutoTest/TestDatas/CommonData.py" />
+        <option value="$PROJECT_DIR$/appium_AutoTest/TestDatas/__init__.py" />
+        <option value="$PROJECT_DIR$/appium_AutoTest/TestCases/test_login.py" />
+        <option value="$PROJECT_DIR$/appium_AutoTest/TestCases/test_invest.py" />
+        <option value="$PROJECT_DIR$/appium_AutoTest/TestCases/conftest.py" />
+        <option value="$PROJECT_DIR$/appium_AutoTest/TestCases/__init__.py" />
+        <option value="$PROJECT_DIR$/appium_AutoTest/PageObjects/BasePage.py" />
+        <option value="$PROJECT_DIR$/appium_AutoTest/PageObjects/index_page.py" />
+        <option value="$PROJECT_DIR$/appium_AutoTest/PageObjects/invest_page.py" />
+        <option value="$PROJECT_DIR$/appium_AutoTest/PageObjects/login_page.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1" />
+    <option name="width" value="1438" />
+    <option name="height" value="860" />
+  </component>
   <component name="ProjectId" id="1Z4zoBcNi9Ce15RW3bLNwvWahXg" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="PAGEO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PAGEO" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PAGEO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PAGEO" type="462c0819:PsiDirectoryNode" />
+              <item name="appium_AutoTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PAGEO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PAGEO" type="462c0819:PsiDirectoryNode" />
+              <item name="appium_AutoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="PageObjects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PAGEO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PAGEO" type="462c0819:PsiDirectoryNode" />
+              <item name="appium_AutoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="TestCases" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PAGEO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PAGEO" type="462c0819:PsiDirectoryNode" />
+              <item name="appium_AutoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="TestDatas" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -69,6 +292,12 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PAGEO" />
+      <recent name="D:\PAGEO\demo\testsuites" />
+      <recent name="D:\PAGEO\demo\testcases" />
+      <recent name="D:\PAGEO\demo\api" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\PAGEO\demo\testsuites" />
       <recent name="D:\PAGEO\demo\api\logs" />
@@ -76,11 +305,18 @@
       <recent name="D:\PAGEO\demo\testsuites\logs" />
       <recent name="D:\PAGEO\demo\data" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\PAGEO\demo\testsuites" />
-      <recent name="D:\PAGEO\demo\testcases" />
-      <recent name="D:\PAGEO\demo\api" />
-    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager" selected="Python tests.py.test for test.test_1">
     <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python">
@@ -101,9 +337,6 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
     </configuration>
     <configuration name="login" type="tests" factoryName="py.test">
       <module name="PAGEO" />
@@ -119,7 +352,6 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/testcase/test_login.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
     </configuration>
     <configuration name="py.test for test_request.TestRequest.test_1" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="PAGEO" />
@@ -135,7 +367,6 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_request.TestRequest.test_1&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
     </configuration>
     <configuration name="py.test for test_request.TestRequest.test_pro" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="PAGEO" />
@@ -151,7 +382,6 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_request.TestRequest.test_pro&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
     </configuration>
     <configuration name="py.test for test_search.TestCase.test_search" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="PAGEO" />
@@ -167,7 +397,6 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_search.TestCase.test_search&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
     </configuration>
     <configuration name="py.test for test.test_1" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="PAGEO" />
@@ -183,7 +412,6 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test.test_1&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
     </configuration>
     <configuration name="py.test in test.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="PAGEO" />
@@ -199,7 +427,6 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/interface/test.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Python.Unnamed" />
@@ -330,6 +557,33 @@
       <configuration name="py.test for test.test_1" configurationId="tests" />
     </history-entry>
   </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32882273" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32987013" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.50192803" side_tool="true" weight="0.41298702" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3292683" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14138818" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32969153" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.32969153" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49807197" weight="0.41298702" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -349,12 +603,21 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="selenium 一些 笔记" />
@@ -367,5 +630,108 @@
     <MESSAGE value="add X-Zhao-Test" />
     <MESSAGE value="login、login+getWaitPay 2 testSuite" />
     <option name="LAST_COMMIT_MESSAGE" value="login、login+getWaitPay 2 testSuite" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/appium_AutoTest/Caps/Caps.yaml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interface/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apitest/test_request.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_AutoTest/Common/BaseDriver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-162">
+          <folding>
+            <element signature="e#19#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_AutoTest/TestDatas/login_testdatas.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_AutoTest/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_AutoTest/TestDatas/invest_testdatas.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_AutoTest/TestDatas/CommonData.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_AutoTest/TestDatas/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_AutoTest/TestCases/test_login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#19#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_AutoTest/TestCases/test_invest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#19#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_AutoTest/TestCases/conftest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#19#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_AutoTest/TestCases/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_AutoTest/PageObjects/index_page.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_AutoTest/PageObjects/invest_page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_AutoTest/PageObjects/login_page.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="53" selection-start-line="5" selection-start-column="53" selection-end-line="5" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_AutoTest/PageObjects/BasePage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="17" column="84" lean-forward="true" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
