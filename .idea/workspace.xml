@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ead81cf-f338-4817-b18b-4b725b5704b2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="6ead81cf-f338-4817-b18b-4b725b5704b2" name="Default" comment="add some Inter">
+      <change afterPath="$PROJECT_DIR$/apitest/TestFixture.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apitest/mine.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apitest/test_mine.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PAGEO.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PAGEO.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HR" beforeDir="false" afterPath="$PROJECT_DIR$/HR" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Inter" beforeDir="false" afterPath="$PROJECT_DIR$/Inter" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apitest/test_request.py" beforeDir="false" afterPath="$PROJECT_DIR$/apitest/test_request.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +85,7 @@
       <recent name="D:\PAGEO\demo\api" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.py.test for test.test_1">
+  <component name="RunManager" selected="Python tests.pytest for TestFixture.test_a">
     <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python">
       <module name="PAGEO" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -121,29 +124,13 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="py.test for test_request.TestRequest.test_1" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="PAGEO" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apitest" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_request.TestRequest.test_1&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="py.test for test_request.TestRequest.test_pro" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="PAGEO" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="$USER_HOME$/venv/bin/python" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apitest" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
@@ -153,70 +140,86 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="py.test for test_search.TestCase.test_search" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for TestFixture.test_a" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="PAGEO" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/web/page_object/testcase" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apitest" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_search.TestCase.test_search&quot;" />
+      <option name="_new_target" value="&quot;TestFixture.test_a&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="py.test for test.test_1" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_mine.TestMine.test_pro" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="PAGEO" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/interface" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apitest" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test.test_1&quot;" />
+      <option name="_new_target" value="&quot;test_mine.TestMine.test_pro&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="py.test in test.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for test_mine.TestMine.test_user_quote" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="PAGEO" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/interface" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apitest" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/interface/test.py&quot;" />
+      <option name="_new_target" value="&quot;test_mine.TestMine.test_user_quote&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in TestFixture.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="PAGEO" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apitest" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/apitest/TestFixture.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Python.Unnamed" />
       <item itemvalue="Python tests.login" />
-      <item itemvalue="Python tests.py.test for test_search.TestCase.test_search" />
-      <item itemvalue="Python tests.py.test for test_request.TestRequest.test_1" />
       <item itemvalue="Python tests.py.test for test_request.TestRequest.test_pro" />
-      <item itemvalue="Python tests.py.test in test.py" />
-      <item itemvalue="Python tests.py.test for test.test_1" />
+      <item itemvalue="Python tests.pytest for test_mine.TestMine.test_pro" />
+      <item itemvalue="Python tests.pytest for test_mine.TestMine.test_user_quote" />
+      <item itemvalue="Python tests.pytest in TestFixture.py" />
+      <item itemvalue="Python tests.pytest for TestFixture.test_a" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.py.test for test.test_1" />
-        <item itemvalue="Python tests.py.test in test.py" />
+        <item itemvalue="Python tests.pytest for TestFixture.test_a" />
+        <item itemvalue="Python tests.pytest in TestFixture.py" />
+        <item itemvalue="Python tests.pytest for test_mine.TestMine.test_user_quote" />
+        <item itemvalue="Python tests.pytest for test_mine.TestMine.test_pro" />
         <item itemvalue="Python tests.py.test for test_request.TestRequest.test_pro" />
-        <item itemvalue="Python tests.py.test for test_request.TestRequest.test_1" />
-        <item itemvalue="Python tests.py.test for test_search.TestCase.test_search" />
       </list>
     </recent_temporary>
   </component>
@@ -230,7 +233,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1582012207158</updated>
-      <workItem from="1584113328549" duration="4107000" />
+      <workItem from="1584113328549" duration="4814000" />
+      <workItem from="1584368816359" duration="493000" />
+      <workItem from="1584374977984" duration="409000" />
+      <workItem from="1584548121076" duration="4929000" />
+      <workItem from="1584773795856" duration="115000" />
+      <workItem from="1585154400608" duration="3347000" />
     </task>
     <task id="LOCAL-00001" summary="selenium 一些 笔记">
       <created>1582194366474</created>
@@ -295,40 +303,15 @@
       <option name="project" value="LOCAL" />
       <updated>1584008264412</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add some Inter">
+      <created>1584286531243</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1584286531243</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="py_test_for_test_search_TestCase_test_search - 2020.02.21 at 16h 04m 04s.xml">
-      <configuration name="py.test for test_search.TestCase.test_search" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_for_test_search_TestCase_test_search - 2020.02.21 at 16h 05m 25s.xml">
-      <configuration name="py.test for test_search.TestCase.test_search" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_for_test_search_TestCase_test_search - 2020.02.21 at 16h 06m 37s.xml">
-      <configuration name="py.test for test_search.TestCase.test_search" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_for_test_request_TestRequest_test_1 - 2020.03.04 at 13h 46m 25s.xml">
-      <configuration name="py.test for test_request.TestRequest.test_1" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_for_test_request_TestRequest_test_1 - 2020.03.04 at 13h 47m 52s.xml">
-      <configuration name="py.test for test_request.TestRequest.test_1" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_for_test_request_TestRequest_test_1 - 2020.03.04 at 13h 49m 19s.xml">
-      <configuration name="py.test for test_request.TestRequest.test_1" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_for_test_request_TestRequest_test_pro - 2020.03.04 at 17h 00m 43s.xml">
-      <configuration name="py.test for test_request.TestRequest.test_pro" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_in_test_py - 2020.03.10 at 15h 20m 27s.xml">
-      <configuration name="py.test in test.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_for_test_test_1 - 2020.03.10 at 15h 21m 06s.xml">
-      <configuration name="py.test for test.test_1" configurationId="tests" />
-    </history-entry>
-    <history-entry file="py_test_for_test_test_1 - 2020.03.10 at 15h 21m 32s.xml">
-      <configuration name="py.test for test.test_1" configurationId="tests" />
-    </history-entry>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -366,6 +349,64 @@
     <MESSAGE value="use .ENV parameter" />
     <MESSAGE value="add X-Zhao-Test" />
     <MESSAGE value="login、login+getWaitPay 2 testSuite" />
-    <option name="LAST_COMMIT_MESSAGE" value="login、login+getWaitPay 2 testSuite" />
+    <MESSAGE value="add some Inter" />
+    <option name="LAST_COMMIT_MESSAGE" value="add some Inter" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="793" y="166" key="#py.test_for_test_request.TestRequest.test_pro" timestamp="1584548461229">
+      <screen x="55" y="23" width="1625" height="1027" />
+    </state>
+    <state x="793" y="166" key="#py.test_for_test_request.TestRequest.test_pro/55.23.1625.1027@55.23.1625.1027" timestamp="1584548461229" />
+    <state x="496" y="141" key="CommitChangelistDialog2" timestamp="1584286530741">
+      <screen x="55" y="23" width="1625" height="1027" />
+    </state>
+    <state x="496" y="141" key="CommitChangelistDialog2/55.23.1625.1027@55.23.1625.1027" timestamp="1584286530741" />
+    <state width="771" height="278" key="GridCell.Tab.0.bottom" timestamp="1584632490086">
+      <screen x="55" y="23" width="1625" height="1027" />
+    </state>
+    <state width="771" height="278" key="GridCell.Tab.0.bottom/55.23.1625.1027@55.23.1625.1027" timestamp="1584632490086" />
+    <state width="771" height="278" key="GridCell.Tab.0.center" timestamp="1584632490085">
+      <screen x="55" y="23" width="1625" height="1027" />
+    </state>
+    <state width="771" height="278" key="GridCell.Tab.0.center/55.23.1625.1027@55.23.1625.1027" timestamp="1584632490085" />
+    <state width="771" height="278" key="GridCell.Tab.0.left" timestamp="1584632490085">
+      <screen x="55" y="23" width="1625" height="1027" />
+    </state>
+    <state width="771" height="278" key="GridCell.Tab.0.left/55.23.1625.1027@55.23.1625.1027" timestamp="1584632490085" />
+    <state width="771" height="278" key="GridCell.Tab.0.right" timestamp="1584632490086">
+      <screen x="55" y="23" width="1625" height="1027" />
+    </state>
+    <state width="771" height="278" key="GridCell.Tab.0.right/55.23.1625.1027@55.23.1625.1027" timestamp="1584632490086" />
+    <state width="784" height="356" key="GridCell.Tab.1.bottom" timestamp="1584548648751">
+      <screen x="55" y="23" width="1625" height="1027" />
+    </state>
+    <state width="784" height="356" key="GridCell.Tab.1.bottom/55.23.1625.1027@55.23.1625.1027" timestamp="1584548648751" />
+    <state width="784" height="356" key="GridCell.Tab.1.center" timestamp="1584548648750">
+      <screen x="55" y="23" width="1625" height="1027" />
+    </state>
+    <state width="784" height="356" key="GridCell.Tab.1.center/55.23.1625.1027@55.23.1625.1027" timestamp="1584548648750" />
+    <state width="784" height="356" key="GridCell.Tab.1.left" timestamp="1584548648750">
+      <screen x="55" y="23" width="1625" height="1027" />
+    </state>
+    <state width="784" height="356" key="GridCell.Tab.1.left/55.23.1625.1027@55.23.1625.1027" timestamp="1584548648750" />
+    <state width="784" height="356" key="GridCell.Tab.1.right" timestamp="1584548648751">
+      <screen x="55" y="23" width="1625" height="1027" />
+    </state>
+    <state width="784" height="356" key="GridCell.Tab.1.right/55.23.1625.1027@55.23.1625.1027" timestamp="1584548648751" />
+    <state x="595" y="175" key="SettingsEditor" timestamp="1584548543386">
+      <screen x="55" y="23" width="1625" height="1027" />
+    </state>
+    <state x="595" y="175" key="SettingsEditor/55.23.1625.1027@55.23.1625.1027" timestamp="1584548543386" />
+    <state x="467" y="278" key="Vcs.Push.Dialog.v2" timestamp="1584286539106">
+      <screen x="55" y="23" width="1625" height="1027" />
+    </state>
+    <state x="467" y="278" key="Vcs.Push.Dialog.v2/55.23.1625.1027@55.23.1625.1027" timestamp="1584286539106" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/zo$pytest_for_TestFixture_test_a.coverage" NAME="pytest for TestFixture.test_a Coverage Results" MODIFIED="1584632490070" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apitest" />
+    <SUITE FILE_PATH="coverage/zo$py_test_for_test_request_TestRequest_test_pro.coverage" NAME="py.test for test_request.TestRequest.test_pro Coverage Results" MODIFIED="1584548667234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apitest" />
+    <SUITE FILE_PATH="coverage/zo$pytest_for_test_mine_TestMine_test_pro.coverage" NAME="pytest for test_mine.TestMine.test_pro Coverage Results" MODIFIED="1584549232479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apitest" />
+    <SUITE FILE_PATH="coverage/zo$pytest_in_TestFixture_py.coverage" NAME="pytest in TestFixture.py Coverage Results" MODIFIED="1584632247004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apitest" />
+    <SUITE FILE_PATH="coverage/zo$pytest_for_test_mine_TestMine_test_user_quote.coverage" NAME="pytest for test_mine.TestMine.test_user_quote Coverage Results" MODIFIED="1584550570139" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apitest" />
   </component>
 </project>
