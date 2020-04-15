@@ -1,7 +1,7 @@
 
-name: WaitPay api
+name: /user/3_3/pay/waitPayStatistics api
 request:
-    url: ${ENV(base_url)}/user/3_3/order/query
+    url: ${ENV(base_url)}/user/3_3/pay/waitPayStatistics
     headers:
         Authorization: ${ENV(Authorization)}
         Content-Type: application/json
@@ -14,15 +14,9 @@ request:
         charset: utf-8
     method: GET
     params:
-        queryMall: 'true'
-extract:
-    orderId: content.data.list.0.list.0.orderId
+        amountCoupon: '0.0'
+        amountPay: '112.0'
+        auctionIds: ${orderId}
+        consumeScore: '0'
 validate:
 -   eq: ["status_code",200]
--   eq: ["headers.Content-Type",application/json;charset=UTF-8]
--   eq:
-    - content.status
-    - SUCCESS
--   eq:
-    - content.detail
-    - 请求数据成功
