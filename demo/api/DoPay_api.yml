@@ -1,0 +1,40 @@
+
+name: dopay api
+request:
+    url: ${ENV(base_url)}/user/3_3/pay/doPay
+    headers:
+        Authorization: ${ENV(Authorization)}
+        Content-Type: application/json
+        User-Agent: okhttp/3.12.0
+        X-Zhao-AppId: ${ENV(X-Zhao-AppId)}
+        X-Zhao-DeviceId: ${ENV(X-Zhao-DeviceId)}
+        X-Zhao-OSInfo: '{"os":"android","osv":"7.1.2","deviceToken":"1a0018970aed6e7f43e","appVer":"4.2.16.1","make":"Hisense","model":"HLTE200T"}'
+        X-Zhao-UserId: $username
+        X-Zhao-Test: $username
+        charset: utf-8
+    method: POST
+    json:
+          auctionSelected: ${orderId}
+          bookingRemarks: ''
+          bookingStartAt: ''
+          bookingTime: PM
+          bplusLogisticsCost: 0
+          bplusSelected: ''
+          bplusSummary: 0
+          consumeScores: 0
+          couponIds: ''
+          couponMoney: 0
+          insuredFee: '0.00'
+          insuredPrice: 0
+          isDlay: 'no'
+          logisticType: '10185'
+          logisticsCost: 0
+          msgType: ''
+          password: '111111'
+          payMethod: APP
+          payType: BALANCE
+          payUse: ORDER
+          subSummary: 112
+          userAddressId: ${addressId}
+validate:
+-   eq: ["status_code",200]

@@ -39,5 +39,5 @@ class WebPageUser(HttpLocust):
     max_wait = 30
 
     # file_path is generated on locusts startup
-    file_path = "testsuites/login_testsuite.yml"
+    file_path = "testsuites/Payflow_testsuite.yml"
     tests = prepare_locust_tests(file_path)

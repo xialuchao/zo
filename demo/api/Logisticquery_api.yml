@@ -1,7 +1,7 @@
 
-name: WaitPay api
+name: logistic/query api get_address
 request:
-    url: ${ENV(base_url)}/user/3_3/order/query
+    url: ${ENV(base_url)}/api/user/logistic/query
     headers:
         Authorization: ${ENV(Authorization)}
         Content-Type: application/json
@@ -14,11 +14,9 @@ request:
         charset: utf-8
     method: GET
     params:
-        queryMall: 'true'
+        auctionIds: ${auctionId}
+        bplusOrderIds: ''
 extract:
-    orderId: content.data.list.0.list.0.orderId
-    auctionId: content.data.list.0.list.0.auctionId
-    total: content.data.list.0.total  #订单拍品数量
-    price: content.data.list.0.list.0.totalAmount #第一个藏品的单价
+    addressId: "content.data.userAddress.id"
 validate:
 -   eq: ["status_code",200]
