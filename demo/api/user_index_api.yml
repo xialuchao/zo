@@ -1,3 +1,4 @@
+
 name: /api/user/index
 request:
     headers:
@@ -8,6 +9,8 @@ request:
         page: '1'
         pageSize: '15'
     url: ${ENV(base_url)}/api/user/index
+variables:
+    username: 1000777
 validate:
 -   eq: [status_code,200]
 -   eq: [headers.Content-Type,application/json;charset=UTF-8]

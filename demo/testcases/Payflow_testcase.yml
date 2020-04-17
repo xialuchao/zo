@@ -11,5 +11,5 @@ teststeps:
       api: api/Logisticquery_api.yml
     - name: WaitPayStatstics
       api: api/WaitPayStatistics_api.yml
-    - name: DoPay
-      api: api/DoPay_api.yml
+#    - name: DoPay
+#      api: api/DoPay_api.yml
