@@ -1,8 +1,8 @@
 
 name: /api/user/quota
 variables:
-    oraclequota: ${get_quota()}
     username: "1000777"
+    oraclequota: ${get_quota($username)}
 request:
     method: GET
     url: ${ENV(base_url)}/api/user/quota

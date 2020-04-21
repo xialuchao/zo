@@ -1,4 +1,5 @@
 name: login
+
 request:
     headers:
         Authorization: ${ENV(Authorization)}

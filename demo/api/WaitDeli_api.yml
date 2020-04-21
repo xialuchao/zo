@@ -1,4 +1,6 @@
 name: /api/user/logistic/waitDelivers
+variables:
+    username: ${get_username()}
 request:
     headers:
         X-Zhao-Test: ${username}

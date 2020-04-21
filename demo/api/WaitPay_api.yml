@@ -1,5 +1,7 @@
 
 name: WaitPay api
+variables:
+    username: ${get_username()}
 request:
     url: ${ENV(base_url)}/user/3_3/order/query
     headers:

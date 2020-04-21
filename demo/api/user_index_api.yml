@@ -1,5 +1,7 @@
 
 name: /api/user/index
+variables:
+    username: ${get_username()}
 request:
     headers:
         X-Zhao-Test: ${username}
@@ -10,7 +12,7 @@ request:
         pageSize: '15'
     url: ${ENV(base_url)}/api/user/index
 variables:
-    username: 1000777
+    username: $username
 validate:
 -   eq: [status_code,200]
 -   eq: [headers.Content-Type,application/json;charset=UTF-8]

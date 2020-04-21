@@ -1,0 +1,2 @@
+1.debugtalk.py 从数据库查询的值，传到api那里直接从int 转化为 str
+2.

@@ -1,5 +1,7 @@
 
 name: logistic/query api get_address
+variables:
+    username: ${get_username()}
 request:
     url: ${ENV(base_url)}/api/user/logistic/query
     headers:
