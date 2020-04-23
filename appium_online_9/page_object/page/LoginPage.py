@@ -18,24 +18,20 @@ class LoginPage(BasePage):
     _back_locator=(By.XPATH, "//*[contains(@resource-id, 'iv_close') or contains(@resource-id, 'iv_action_back')]")
     _username = "手机/昵称/客户编号"
     _password = "密码"
-    _loginButton =(By.NAME, "登 录")
+    _loginButton = (By.XPATH, "//android.view.View[@content-desc='登 录']")
+    _toast = (By.XPATH, "//*[@class='cube-toast-tip']")
 
     def loginByWX(self):
         return self
     def loginByMSG(self, phone, code):
         return self
 
-    def loginByPassword(self):
-        self.findByText(self._username).send_keys("1000010")
-        self.findByText(self._password).send_keys("111111")
+    def loginByPassword(self, username, password):
+        self.findByText(self._username).send_keys(username)
+        self.findByText(self._password).send_keys(password)
         self.find(self._loginButton).click()
 
-        # self.find(self._tv_login_with_account).click()
-        # self.find(self._login_account).send_keys(account)
-        # self.find(self._login_password).send_keys(password)
-        # self.find(self._button_next).click()
-
-        self.loadSteps("../data/LoginPage.yaml", "loginByPassword", var1=account, var2=password)
+        # self.loadSteps("../data/LoginPage.yaml", "loginByPassword", var1=account, var2=password)
         return self
     # def loginSuccessByPassword(self, account, password):
     #     from page_object.page.MainPage import MainPage
@@ -47,7 +43,24 @@ class LoginPage(BasePage):
     #     from page_object.page.ProfilePage import ProfilePage
     #     return ProfilePage()
     #
-    # def getErrorMsg(self):
-    #     msg=self.find(self._error_msg).text
-    #     self.findByText("确定").click()
-    #     return msg
+    def getErrorMsg(self):
+        msg=self.find(self._error_msg).text
+        self.findByText("确定").click()
+        return msg
+    def getToast(self):
+        print(111111111111111111111)
+        try:
+            msg=self.find(self._toast).text
+            print(msg)
+            return msg
+        except:
+            print("havent got toast")
+
+    def elementExist(self, text):
+        source = self.driver.page_source
+        print(source)
+        if text in source:
+            return True
+        else:
+            return False
+

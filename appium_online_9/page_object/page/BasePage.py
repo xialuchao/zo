@@ -26,12 +26,12 @@ class BasePage(object):
     #     #todo: 处理各类弹框
     #     return self.find(*kv)
 
-    def find(self, by, value):
+    def find(self, kv):
         element: WebElement
         #加上重试机制
         for i in range(3):
             try:
-                element=self.driver.find_element(by,value)
+                element=self.driver.find_element(*kv)
                 return element
             except:
                 #找到页面的最顶层元素进行点击
@@ -46,9 +46,7 @@ class BasePage(object):
 
 
     def findByText(self, text) -> WebElement:
-        print("*"*30)
-        print(text)
-        return self.find(By.XPATH, "//*[@text='%s']" %text)
+        return self.find((By.XPATH, "//*[@text='%s']" %text))
 
     def loadSteps(self, po_path, key, **kwargs):
         file=open(po_path, 'r')
@@ -81,4 +79,6 @@ class BasePage(object):
                 element.send_keys(text)
             else:
                 print("UNKNOW COMMAND %s" % step)
+
+
 
