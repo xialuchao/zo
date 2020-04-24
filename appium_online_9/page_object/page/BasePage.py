@@ -4,6 +4,7 @@ from selenium.webdriver.remote.webelement import WebElement
 
 from appium_online_9.page_object.driver.Client import AndroidClient
 import yaml
+import time
 import re
 
 class BasePage(object):
@@ -79,6 +80,15 @@ class BasePage(object):
                 element.send_keys(text)
             else:
                 print("UNKNOW COMMAND %s" % step)
+
+    def swipe_up(self):
+        time.sleep(2)
+        width = self.driver.get_window_size()['width']
+        height = self.driver.get_window_size()['height']
+        self.driver.swipe(width/2,height*7/9,width/2,height/9,500)
+        time.sleep(2)
+
+
 
 
 

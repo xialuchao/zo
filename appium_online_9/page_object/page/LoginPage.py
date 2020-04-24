@@ -1,6 +1,7 @@
+import time
+import allure
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
-
 from appium_online_9.page_object.page.BasePage import BasePage
 from selenium.webdriver.support import expected_conditions
 
@@ -19,7 +20,11 @@ class LoginPage(BasePage):
     _username = "手机/昵称/客户编号"
     _password = "密码"
     _loginButton = (By.XPATH, "//android.view.View[@content-desc='登 录']")
-    _toast = (By.XPATH, "//*[@class='cube-toast-tip']")
+    # _toast = (By.XPATH, "//*[@class='cube-toast-tip']")
+    _mine = "我的"
+    _setting_btn = (By.ID, "m_tool_set_btn")
+    _logout_btn = (By.ID, "btn_logout_set")
+    _yes_btn = "是"
 
     def loginByWX(self):
         return self
@@ -56,11 +61,27 @@ class LoginPage(BasePage):
         except:
             print("havent got toast")
 
+    @allure.step("元素是否存在")
     def elementExist(self, text):
+        time.sleep(5)
         source = self.driver.page_source
-        print(source)
+        # print(source)
         if text in source:
             return True
         else:
             return False
+
+    @allure.step("退出账号")
+    def logout_account(self):
+        self.findByText(self._mine).click()
+        if self.elementExist("账户余额"):
+            self.find(self._setting_btn).click()
+            self.swipe_up()
+            self.find(self._logout_btn).click()
+            self.findByText(self._yes_btn).click()
+        else:
+            print("havent login")
+
+
+
 
