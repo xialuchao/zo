@@ -1,0 +1,17 @@
+config:
+    name: 新人专区 验证是否验证手机号
+    base_url: ${ENV(base_url)}
+#    username: 1000010
+#variables:
+
+
+teststeps:
+    - name: 用户已认证手机
+      variables:
+          username: "1000010"
+      api: api/NewPeo_api.yml
+      validate:
+          - eq: [content.data.userNewbieInfo.mobile,1]
+#      parameters:
+#        username:
+#            - ["1000010"]
