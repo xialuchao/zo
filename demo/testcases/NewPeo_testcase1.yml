@@ -9,9 +9,10 @@ teststeps:
     - name: 用户已认证手机
       variables:
           username: "1000010"
+          phone_ver: ${get_phone_ver($username)}
       api: api/NewPeo_api.yml
       validate:
-          - eq: [content.data.userNewbieInfo.mobile,1]
+          - eq: [content.data.userNewbieInfo.mobile,$phone_ver]
 #      parameters:
 #        username:
 #            - ["1000010"]

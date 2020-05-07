@@ -8,7 +8,6 @@ import cx_Oracle
 from datetime import datetime
 from DBUtils.PooledDB import PooledDB
 
-
 class Ora():
     __pool = None  # 连接池对象
 
@@ -190,27 +189,27 @@ class Ora():
         self.conn.close()
 
 
-if __name__ == '__main__':
-    db_info = {
-        'dbtype': 'oracle',
-        'user': 'zhao',
-        'pwd': 'zhao',
-        'host': '192.168.0.66',
-        'port': '1521',
-        'sid': 'zhaotest'
-    }
-    ora = Ora(db_info=db_info)
-    rows = ora.query("select *  from tb_user a where loginname='zhengyangbo'")
-    print
-    rows
-    ora.insert('temp_temp', {'a': 'a', 'b': 'b'})
-    ora.multi_insert('temp_temp', ['a', 'b'], [(1, 2), (2, 3), (3, 4)])
-    ora.update('temp_temp', {'a': 'aa', 'b': 'bb'}, {'a': 'a'})
-    ora.backup('temp_temp', 1, u'a', {'a': 'a'})
-    ora.delete('temp_temp', {'a': 'a'})
-    print
-    ora.nextval('seq_tb_hfxm_id')
-    print
-    ora.create_params('temp_temp', {'a': 'a'})
-    print
-    ora.query_pages("select *  from tb_user a where loginname=:loginname", {"loginname": "zh"})
+# if __name__ == '__main__':
+#     db_info = {
+#         'dbtype': 'oracle',
+#         'user': 'zhao',
+#         'pwd': 'zhao',
+#         'host': '192.168.0.66',
+#         'port': '1521',
+#         'sid': 'zhaotest'
+#     }
+#     ora = Ora(db_info=db_info)
+#     rows = ora.query("select *  from tb_user a where loginname='zhengyangbo'")
+#     print
+#     rows
+#     ora.insert('temp_temp', {'a': 'a', 'b': 'b'})
+#     ora.multi_insert('temp_temp', ['a', 'b'], [(1, 2), (2, 3), (3, 4)])
+#     ora.update('temp_temp', {'a': 'aa', 'b': 'bb'}, {'a': 'a'})
+#     ora.backup('temp_temp', 1, u'a', {'a': 'a'})
+#     ora.delete('temp_temp', {'a': 'a'})
+#     print
+#     ora.nextval('seq_tb_hfxm_id')
+#     print
+#     ora.create_params('temp_temp', {'a': 'a'})
+#     print
+#     ora.query_pages("select *  from tb_user a where loginname=:loginname", {"loginname": "zh"})
