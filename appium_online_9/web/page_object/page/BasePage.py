@@ -6,3 +6,8 @@ class BasePage(object):
 
     def __init__(self, driver):
         self.driver:WebDriver = driver
+
+    def find(self, kv):
+        element = self.driver.find_element(*kv)
+        return element
+

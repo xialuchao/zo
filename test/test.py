@@ -80,32 +80,56 @@
 #     def __init__(self, num):
 #         self.a = num + 5
 
-#fixture
-import pytest
-# def test1(before):
-#     print(1)
+# #fixture
+# import pytest
+# # def test1(before):
+# #     print(1)
+# #
+# # def test2(before):
+# #     print(2)
+# #     assert 0
 #
-# def test2(before):
-#     print(2)
-#     assert 0
+# # pytestmark=pytest.mark.usefixtures("before")
+# # @pytest.fixture(autouse="true")
+#
+#
+# class Test_fix():
+#     # @pytest.mark.userfixtures("before")
+#     @pytest.mark.aaa
+#     def test1(self):
+#         print(1)
+#         assert 1 == 1
+#
+#     # @pytest.mark.userfixtures("before")
+#     def test2(self):
+#         print(2)
+#         assert 2 == 2
+#
+#
+#
+# if __name__ == "__main__":
+# #     pytest.main(["-m", "aaa","-s", "test.py"])
+#
+# a = [{
+#   "mobile_id": "942bbbd3",
+#   "mobile_version": "9",
+#   "mobile_model": "OPPO PAFM00",
+#   "mobile_resolution": "2340 x 1080"
+#  },{
+#   "mobile_id": "942bdddbd3",
+#   "mobile_version": "9",
+#   "mobile_model": "OPPO PAFM00",
+#   "mobile_resolution": "2340 x 1080"
+#  }]
+#
+# # print(len(a[0]))
+# # print(a[1]["mobile_id"])
+#
+# for i in range(len(a)):
+#     print(a[i]["mobile_id"])
 
-# pytestmark=pytest.mark.usefixtures("before")
-# @pytest.fixture(autouse="true")
-
-
-class Test_fix():
-    # @pytest.mark.userfixtures("before")
-    @pytest.mark.aaa
-    def test1(self):
-        print(1)
-        assert 1 == 1
-
-    # @pytest.mark.userfixtures("before")
-    def test2(self):
-        print(2)
-        assert 2 == 2
 
 
 
-if __name__ == "__main__":
-    pytest.main(["-m", "aaa","-s", "test.py"])
+a = "abd"
+print(url +"/"+ a)
