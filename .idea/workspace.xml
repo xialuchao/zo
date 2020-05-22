@@ -2,22 +2,104 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ead81cf-f338-4817-b18b-4b725b5704b2" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/demo/testcases/NewPeo_testcase3.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/bin/allure" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/bin/allure.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/config/allure-cucumber.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/config/allure-junit.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/config/allure.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/allure-commandline-2.7.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/allure-generator-2.7.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/allure-plugin-api-2.7.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/allure1-model-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/allure2-model-api-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/allure2-model-jackson-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/allure2-model-pojo-1.0.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/commons-beanutils-1.9.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/commons-codec-1.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/commons-collections-3.2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/commons-collections4-4.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/commons-io-2.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/commons-lang3-3.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/commons-text-1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/config/jetty-logging.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/config/log4j.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/flexmark-0.34.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/flexmark-util-0.34.8.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/freemarker-2.3.28.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/httpclient-4.5.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/httpcore-4.4.10.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/jackson-annotations-2.9.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/jackson-core-2.9.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/jackson-databind-2.9.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/jackson-dataformat-xml-2.9.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/jackson-dataformat-yaml-2.9.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/jackson-module-jaxb-annotations-2.9.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/javax.servlet-api-3.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/jaxb-api-2.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/jaxb-utils-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/jcommander-1.72.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/jetty-http-9.4.11.v20180605.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/jetty-io-9.4.11.v20180605.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/jetty-server-9.4.11.v20180605.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/jetty-util-9.4.11.v20180605.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/log4j-1.2.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/opencsv-4.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/properties-2.0.RC5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/slf4j-api-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/slf4j-log4j12-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/snakeyaml-1.18.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/stax2-api-3.1.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/tika-core-1.18.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/lib/woodstox-core-5.0.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/plugins/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/plugins/behaviors-plugin/allure-plugin.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/plugins/behaviors-plugin/plugin.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/plugins/behaviors-plugin/static/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/plugins/custom-logo-plugin/allure-plugin.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/plugins/custom-logo-plugin/static/custom-logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/plugins/custom-logo-plugin/static/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/plugins/junit-xml-plugin/allure-plugin.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/plugins/junit-xml-plugin/junit-xml-plugin-2.7.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/plugins/packages-plugin/allure-plugin.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/plugins/packages-plugin/plugin.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/plugins/packages-plugin/static/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/plugins/screen-diff-plugin/allure-plugin.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/plugins/screen-diff-plugin/static/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/plugins/screen-diff-plugin/static/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/plugins/trx-plugin/allure-plugin.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/plugins/trx-plugin/trx-plugin-2.7.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/plugins/xctest-plugin/allure-plugin.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/plugins/xctest-plugin/lib/xmlwise-1.2.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/plugins/xctest-plugin/xctest-plugin-2.7.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/plugins/xunit-xml-plugin/allure-plugin.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/allure-2.7.0/plugins/xunit-xml-plugin/xunit-xml-plugin-2.7.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/data/LoginPage.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/data/MainPage.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/data/ProfilePage.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/data/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/data/demo.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/data/driver.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/driver/Client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/driver/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/page/App.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/page/BasePage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/page/LoginPage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/page/MainPage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/page/ProfilePage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/page/SearchPage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/page/SelectedPage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/page/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/testcase/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/testcase/test_login.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/testcase/test_search.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/testcase/test_selected.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/ut/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/page_object/ut/test_ut.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/appium_online_9/web/page_object/page/BasePage.py" beforeDir="false" afterPath="$PROJECT_DIR$/appium_online_9/web/page_object/page/BasePage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appium_online_9/web/page_object/page/MainPage.py" beforeDir="false" afterPath="$PROJECT_DIR$/appium_online_9/web/page_object/page/MainPage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appium_online_9/web/page_object/testcase/BaseTestCase.py" beforeDir="false" afterPath="$PROJECT_DIR$/appium_online_9/web/page_object/testcase/BaseTestCase.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appium_online_9/web/page_object/testcase/test_xueqiu.py" beforeDir="false" afterPath="$PROJECT_DIR$/appium_online_9/web/page_object/testcase/test_xueqiu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/page_object/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/page_object/page/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/page_object/page/base_page.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/page_object/page/home_page.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/page_object/page/search_page.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/page_object/testcase/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/page_object/testcase/test_search.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/test_web.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/appium_online_9/web/page_object/testcase/test_zhao.py" beforeDir="false" afterPath="$PROJECT_DIR$/appium_online_9/web/page_object/testcase/test_zhao.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -189,6 +271,14 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="page_object" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="PAGEO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PAGEO" type="462c0819:PsiDirectoryNode" />
+              <item name="appium_online_9" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="page_object" type="462c0819:PsiDirectoryNode" />
+              <item name="page" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -205,7 +295,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SearchEverywhereHistoryKey" value="/data/driver.yaml&#9;FILE&#9;file://D:/PAGEO/appium_online_9/page_object/data/driver.yaml&#10;httpbin&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/appium_online_9" />
+    <property name="last_opened_file_path" value="D:/Script/appiumn_auto-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="IpnbConfigurable" />
@@ -554,7 +644,21 @@
       <option name="project" value="LOCAL" />
       <updated>1588838158134</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="selenium">
+      <created>1590053187940</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1590053187940</updated>
+    </task>
+    <task id="LOCAL-00023" summary="selenium">
+      <created>1590053321966</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1590053321966</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -589,7 +693,7 @@
       <configuration name="py.test for test_login.TestLogin.test_login_password" configurationId="tests" />
     </history-entry>
   </component>
-  <component name="TodoView" selected-index="3">
+  <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -601,27 +705,27 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4993573" weight="0.3292683" />
+      <window_info active="true" anchor="bottom" id="TODO" order="6" sideWeight="0.4993573" visible="true" weight="0.3292683" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32791328" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3292683" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.3292683" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.62435895" side_tool="true" weight="0.43074793" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.37564102" weight="0.43074793" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12210797" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.124678664" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" weight="0.32969153" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32963988" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32969153" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49807197" weight="0.41298702" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32963988" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -672,27 +776,28 @@
     <MESSAGE value="add appium_autotest" />
     <MESSAGE value="add appium_autotest url" />
     <MESSAGE value="add hr api" />
-    <option name="LAST_COMMIT_MESSAGE" value="add hr api" />
+    <MESSAGE value="selenium" />
+    <option name="LAST_COMMIT_MESSAGE" value="selenium" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/appium_online_9/page_object/page/LoginPage.py">
+    <entry file="file://$PROJECT_DIR$/appium_online_9/android/page/LoginPage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1674">
           <caret line="67" column="20" selection-start-line="67" selection-start-column="11" selection-end-line="67" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/appium_online_9/page_object/__init__.py">
+    <entry file="file://$PROJECT_DIR$/appium_online_9/android/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/appium_online_9/page_object/ut/test_ut.py">
+    <entry file="file://$PROJECT_DIR$/appium_online_9/android/ut/test_ut.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/appium_online_9/page_object/testcase/test_login.py">
+    <entry file="file://$PROJECT_DIR$/appium_online_9/android/testcase/test_login.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
           <caret line="1" column="58" selection-start-line="1" selection-start-column="58" selection-end-line="1" selection-end-column="58" />
@@ -709,7 +814,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/appium_online_9/page_object/page/BasePage.py">
+    <entry file="file://$PROJECT_DIR$/appium_online_9/android/page/BasePage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1836">
           <caret line="75" column="42" selection-start-line="75" selection-start-column="42" selection-end-line="75" selection-end-column="42" />
@@ -931,13 +1036,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/appium_online_9/web/page_object/testcase/test_xueqiu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="7" column="62" selection-start-line="7" selection-start-column="62" selection-end-line="7" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/appium_online_9/web/page_object/testcase/test_xueqiu.py" />
     <entry file="file://$PROJECT_DIR$/appium_online_9/web/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>

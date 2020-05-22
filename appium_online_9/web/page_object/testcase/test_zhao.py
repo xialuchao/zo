@@ -7,15 +7,18 @@ from web.page_object.page.MainPage import MainPage
 from web.page_object.page.ProfilePage import ProfilePage
 from web.page_object.testcase.BaseTestCase import BaseTestCase
 from web.page_object.page.LoginPage import LoginPage
+from web.page_object.page.BasePage import BasePage
+from web.page_object.page.PC import PC
 
 
 class TestZhao(BaseTestCase):
 
     def setup(self):
         # self.driver=webdriver.Remote(desired_capabilities=DesiredCapabilities.CHROME,command_executor='http://192.168.6.242:4444/wd/hub')
-        self.driver=webdriver.Remote(command_executor='http://192.168.6.242:4444/wd/hub', desired_capabilities = DesiredCapabilities.CHROME)
-
+        # self.driver=webdriver.Remote(command_executor='http://192.168.6.242:4444/wd/hub', desired_capabilities = DesiredCapabilities.CHROME)
         # self.driver = webdriver.Chrome("E:\\chromedriver_win32\\chromedriver.exe")
+        self.driver = PC.get_driver()
+        print(self.driver)
         self.driver.implicitly_wait(10)
         self.driver.get("http://ft1.sh.zhaoonline.com/")
         self.main=MainPage(self.driver)
