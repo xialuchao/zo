@@ -33,7 +33,7 @@ http://selenium-release.storage.googleapis.com/index.html
 self.driver.execute_script("return JSON.stringify(window.performance.timing)")
 
 模式应该为：
-远程linux有一套自动化平台
+    远程linux有一套自动化平台
 
 传统：
 python --> chromedriver --> chrome

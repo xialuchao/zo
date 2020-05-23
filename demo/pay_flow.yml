@@ -1,0 +1,770 @@
+config:
+    name: testcase description
+    variables: {}
+teststeps:
+-   name: /user/3_3/order/query
+    request:
+        headers:
+            Authorization: ZHAO 3xWJrf4kXLptT8InqiF:rT12yF/cIUEKsy57m5vYIANVFVc=
+            Content-Type: application/json
+            User-Agent: okhttp/3.12.0
+            X-Zhao-AppId: fKhnk3UwbjhLP5NuFNQm5W
+            X-Zhao-DeviceId: e23f36a7df5a663a
+            X-Zhao-OSInfo: '{"os":"android","osv":"6.0.1","deviceToken":"","appVer":"4.3","make":"Xiaomi","model":"Redmi
+                Note 3"}'
+            X-Zhao-UserId: '1000777'
+            charset: utf-8
+        method: GET
+        params:
+            queryMall: 'true'
+        url: http://ft1.mobile.zhaoonline.com/user/3_3/order/query
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+-   name: /userInfo/services/noticeNum
+    request:
+        headers:
+            Authorization: ZHAO 3xWJrf4kXLptT8InqiF:PTlYopSLACQ8q9jQPQDYzVcc4Ls=
+            Content-Type: application/json
+            User-Agent: Mozilla/5.0 (Linux; U; Android 6.0.1; zh-cn; Redmi Note 3
+                Build/MMB29M) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile
+                Safari/534.30
+            X-Zhao-AppId: fKhnk3UwbjhLP5NuFNQm5W
+            X-Zhao-DeviceId: e23f36a7df5a663a
+            X-Zhao-OSInfo: '{"os":"android","osv":"6.0.1","deviceToken":"","appVer":"4.3","make":"Xiaomi","model":"Redmi
+                Note 3"}'
+            X-Zhao-UserId: '1000777'
+            charset: utf-8
+        method: GET
+        url: http://ft1.mobile.zhaoonline.com/userInfo/services/noticeNum
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+    -   eq:
+        - content.status
+        - SUCCESS
+    -   eq:
+        - content.detail
+        - 请求数据成功
+-   name: /api/user/logistic/waitDelivers
+    request:
+        headers:
+            Authorization: ZHAO 3xWJrf4kXLptT8InqiF:GDQypmRoU/qLv5PqenNgvGrHu6c=
+            Content-Type: application/json
+            User-Agent: okhttp/3.12.0
+            X-Zhao-AppId: fKhnk3UwbjhLP5NuFNQm5W
+            X-Zhao-DeviceId: e23f36a7df5a663a
+            X-Zhao-OSInfo: '{"os":"android","osv":"6.0.1","deviceToken":"","appVer":"4.3","make":"Xiaomi","model":"Redmi
+                Note 3"}'
+            X-Zhao-UserId: '1000777'
+            charset: utf-8
+        method: GET
+        params:
+            page: '1'
+            pageSize: '15'
+        url: http://ft1.mobile.zhaoonline.com/api/user/logistic/waitDelivers
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+    -   eq:
+        - content.status
+        - SUCCESS
+    -   eq:
+        - content.detail
+        - 请求数据成功
+-   name: /api/user/logistic/waiting
+    request:
+        headers:
+            Authorization: ZHAO 3xWJrf4kXLptT8InqiF:zRhzrhQUHxop6Slo00UCWqThZJs=
+            Content-Type: application/json
+            User-Agent: okhttp/3.12.0
+            X-Zhao-AppId: fKhnk3UwbjhLP5NuFNQm5W
+            X-Zhao-DeviceId: e23f36a7df5a663a
+            X-Zhao-OSInfo: '{"os":"android","osv":"6.0.1","deviceToken":"","appVer":"4.3","make":"Xiaomi","model":"Redmi
+                Note 3"}'
+            X-Zhao-UserId: '1000777'
+            charset: utf-8
+        method: GET
+        params:
+            page: '1'
+            pageSize: '10'
+        url: http://ft1.mobile.zhaoonline.com/api/user/logistic/waiting
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+    -   eq:
+        - content.status
+        - SUCCESS
+    -   eq:
+        - content.detail
+        - 请求数据成功
+-   name: /api/user/logistic/completed
+    request:
+        headers:
+            Authorization: ZHAO 3xWJrf4kXLptT8InqiF:0DCb45dUOgzsgOqkYcocrPTZ/OQ=
+            Content-Type: application/json
+            User-Agent: okhttp/3.12.0
+            X-Zhao-AppId: fKhnk3UwbjhLP5NuFNQm5W
+            X-Zhao-DeviceId: e23f36a7df5a663a
+            X-Zhao-OSInfo: '{"os":"android","osv":"6.0.1","deviceToken":"","appVer":"4.3","make":"Xiaomi","model":"Redmi
+                Note 3"}'
+            X-Zhao-UserId: '1000777'
+            charset: utf-8
+        method: GET
+        params:
+            page: '1'
+            pageSize: '10'
+        url: http://ft1.mobile.zhaoonline.com/api/user/logistic/completed
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+    -   eq:
+        - content.status
+        - SUCCESS
+    -   eq:
+        - content.detail
+        - 请求数据成功
+-   name: /api/user/index
+    request:
+        headers:
+            Authorization: ZHAO 3xWJrf4kXLptT8InqiF:UKIU0wMDYFsQ1PMDsMPXen5uVmQ=
+            Content-Type: application/json
+            User-Agent: okhttp/3.12.0
+            X-Zhao-AppId: fKhnk3UwbjhLP5NuFNQm5W
+            X-Zhao-DeviceId: e23f36a7df5a663a
+            X-Zhao-OSInfo: '{"os":"android","osv":"6.0.1","deviceToken":"","appVer":"4.3","make":"Xiaomi","model":"Redmi
+                Note 3"}'
+            X-Zhao-UserId: '1000777'
+            charset: utf-8
+        method: GET
+        url: http://ft1.mobile.zhaoonline.com/api/user/index
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+    -   eq:
+        - content.userId
+        - 1000777
+    -   eq:
+        - content.nickname
+        - '1000777'
+    -   eq:
+        - content.headImgUrl
+        - null
+    -   eq:
+        - content.authStatus
+        - AUTHORIZED
+    -   eq:
+        - content.totalAccount
+        - 999980000.0
+    -   eq:
+        - content.quota
+        - 996900
+    -   eq:
+        - content.trustBails
+        - 0.0
+    -   eq:
+        - content.bplusQuote
+        - 0.0
+    -   eq:
+        - content.unPaid
+        - 31
+    -   eq:
+        - content.notYetDelivery
+        - 0
+    -   eq:
+        - content.delivered
+        - 0
+    -   eq:
+        - content.entrust
+        - 31
+    -   eq:
+        - content.attention
+        - 0
+    -   eq:
+        - content.tqznum
+        - 0
+    -   eq:
+        - content.trustNotPay
+        - 0
+    -   eq:
+        - content.trustDepot
+        - 0
+    -   eq:
+        - content.trustContract
+        - 0
+    -   eq:
+        - content.won
+        - 31
+    -   eq:
+        - content.failed
+        - 0
+    -   eq:
+        - content.footprint
+        - 0
+    -   eq:
+        - content.newNotDelivery
+        - false
+    -   eq:
+        - content.newPreview
+        - false
+    -   eq:
+        - content.newBid
+        - false
+    -   eq:
+        - content.newDeal
+        - false
+    -   eq:
+        - content.newNotDeal
+        - false
+-   name: /user/3_3/order/query
+    request:
+        headers:
+            Authorization: ZHAO 3xWJrf4kXLptT8InqiF:rT12yF/cIUEKsy57m5vYIANVFVc=
+            Content-Type: application/json
+            User-Agent: okhttp/3.12.0
+            X-Zhao-AppId: fKhnk3UwbjhLP5NuFNQm5W
+            X-Zhao-DeviceId: e23f36a7df5a663a
+            X-Zhao-OSInfo: '{"os":"android","osv":"6.0.1","deviceToken":"","appVer":"4.3","make":"Xiaomi","model":"Redmi
+                Note 3"}'
+            X-Zhao-UserId: '1000777'
+            charset: utf-8
+        method: GET
+        params:
+            queryMall: 'true'
+        url: http://ft1.mobile.zhaoonline.com/user/3_3/order/query
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+    -   eq:
+        - content.status
+        - SUCCESS
+    -   eq:
+        - content.detail
+        - 请求数据成功
+-   name: /api/user/index
+    request:
+        headers:
+            Authorization: ZHAO 3xWJrf4kXLptT8InqiF:UKIU0wMDYFsQ1PMDsMPXen5uVmQ=
+            Content-Type: application/json
+            User-Agent: Mozilla/5.0 (Linux; U; Android 6.0.1; zh-cn; Redmi Note 3
+                Build/MMB29M) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile
+                Safari/534.30
+            X-Zhao-AppId: fKhnk3UwbjhLP5NuFNQm5W
+            X-Zhao-DeviceId: e23f36a7df5a663a
+            X-Zhao-OSInfo: '{"os":"android","osv":"6.0.1","deviceToken":"","appVer":"4.3","make":"Xiaomi","model":"Redmi
+                Note 3"}'
+            X-Zhao-UserId: '1000777'
+            charset: utf-8
+        method: GET
+        url: http://ft1.mobile.zhaoonline.com/api/user/index
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+    -   eq:
+        - content.userId
+        - 1000777
+    -   eq:
+        - content.nickname
+        - '1000777'
+    -   eq:
+        - content.headImgUrl
+        - null
+    -   eq:
+        - content.authStatus
+        - AUTHORIZED
+    -   eq:
+        - content.totalAccount
+        - 999980000.0
+    -   eq:
+        - content.quota
+        - 996900
+    -   eq:
+        - content.trustBails
+        - 0.0
+    -   eq:
+        - content.bplusQuote
+        - 0.0
+    -   eq:
+        - content.unPaid
+        - 31
+    -   eq:
+        - content.notYetDelivery
+        - 0
+    -   eq:
+        - content.delivered
+        - 0
+    -   eq:
+        - content.entrust
+        - 31
+    -   eq:
+        - content.attention
+        - 0
+    -   eq:
+        - content.tqznum
+        - 0
+    -   eq:
+        - content.trustNotPay
+        - 0
+    -   eq:
+        - content.trustDepot
+        - 0
+    -   eq:
+        - content.trustContract
+        - 0
+    -   eq:
+        - content.won
+        - 31
+    -   eq:
+        - content.failed
+        - 0
+    -   eq:
+        - content.footprint
+        - 0
+    -   eq:
+        - content.newNotDelivery
+        - false
+    -   eq:
+        - content.newPreview
+        - false
+    -   eq:
+        - content.newBid
+        - false
+    -   eq:
+        - content.newDeal
+        - false
+    -   eq:
+        - content.newNotDeal
+        - false
+-   name: /user/V1/unreadTrade
+    request:
+        headers:
+            Authorization: ZHAO 3xWJrf4kXLptT8InqiF:WgaY5IoHa5/J1O5zv5o6uvamvog=
+            Content-Type: application/json;charset=utf-8
+            User-Agent: Mozilla/5.0 (Linux; U; Android 6.0.1; zh-cn; Redmi Note 3
+                Build/MMB29M) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile
+                Safari/534.30
+            X-Zhao-AppId: fKhnk3UwbjhLP5NuFNQm5W
+            X-Zhao-DeviceId: e23f36a7df5a663a
+            X-Zhao-OSInfo: '{"os":"android","osv":"6.0.1","deviceToken":"","appVer":"4.3","make":"Xiaomi","model":"Redmi
+                Note 3"}'
+            X-Zhao-UserId: '1000777'
+            charset: utf-8
+        json:
+            number: 0
+            oper: 1
+        method: POST
+        url: http://ft1.mobile.zhaoonline.com/user/V1/unreadTrade
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+    -   eq:
+        - content.status
+        - SUCCESS
+    -   eq:
+        - content.detail
+        - 请求数据成功
+-   name: /api/user/logistic/query
+    request:
+        headers:
+            Authorization: ZHAO 3xWJrf4kXLptT8InqiF:rrlvqRbkvEhTdyxaJ3wQ0qYXET4=
+            Content-Type: application/json
+            User-Agent: okhttp/3.12.0
+            X-Zhao-AppId: fKhnk3UwbjhLP5NuFNQm5W
+            X-Zhao-DeviceId: e23f36a7df5a663a
+            X-Zhao-OSInfo: '{"os":"android","osv":"6.0.1","deviceToken":"","appVer":"4.3","make":"Xiaomi","model":"Redmi
+                Note 3"}'
+            X-Zhao-UserId: '1000777'
+            charset: utf-8
+        method: GET
+        params:
+            auctionIds: '3827862'
+            bplusOrderIds: ''
+        url: http://ft1.mobile.zhaoonline.com/api/user/logistic/query
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+    -   eq:
+        - content.status
+        - SUCCESS
+    -   eq:
+        - content.detail
+        - 请求数据成功
+-   name: /pub/@country
+    request:
+        headers:
+            Authorization: ZHAO 3xWJrf4kXLptT8InqiF:cNFO2k3+7zFhhJ1r0bgPD/zMvr8=
+            Content-Type: application/json
+            User-Agent: okhttp/3.12.0
+            X-Zhao-AppId: fKhnk3UwbjhLP5NuFNQm5W
+            X-Zhao-DeviceId: e23f36a7df5a663a
+            X-Zhao-OSInfo: '{"os":"android","osv":"6.0.1","deviceToken":"","appVer":"4.3","make":"Xiaomi","model":"Redmi
+                Note 3"}'
+            X-Zhao-UserId: '1000777'
+            charset: utf-8
+        method: GET
+        url: http://ft1.mobile.zhaoonline.com/pub/@country
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+-   name: /pub/@province
+    request:
+        headers:
+            Authorization: ZHAO 3xWJrf4kXLptT8InqiF:C7PbvGXuV/Fdd67D4U+L52xKjGw=
+            Content-Type: application/json
+            User-Agent: okhttp/3.12.0
+            X-Zhao-AppId: fKhnk3UwbjhLP5NuFNQm5W
+            X-Zhao-DeviceId: e23f36a7df5a663a
+            X-Zhao-OSInfo: '{"os":"android","osv":"6.0.1","deviceToken":"","appVer":"4.3","make":"Xiaomi","model":"Redmi
+                Note 3"}'
+            X-Zhao-UserId: '1000777'
+            charset: utf-8
+        method: GET
+        params:
+            countryId: '40'
+        url: http://ft1.mobile.zhaoonline.com/pub/@province
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+-   name: /pub/@province
+    request:
+        headers:
+            Authorization: ZHAO 3xWJrf4kXLptT8InqiF:C7PbvGXuV/Fdd67D4U+L52xKjGw=
+            Content-Type: application/json
+            User-Agent: okhttp/3.12.0
+            X-Zhao-AppId: fKhnk3UwbjhLP5NuFNQm5W
+            X-Zhao-DeviceId: e23f36a7df5a663a
+            X-Zhao-OSInfo: '{"os":"android","osv":"6.0.1","deviceToken":"","appVer":"4.3","make":"Xiaomi","model":"Redmi
+                Note 3"}'
+            X-Zhao-UserId: '1000777'
+            charset: utf-8
+        method: GET
+        params:
+            countryId: '40'
+        url: http://ft1.mobile.zhaoonline.com/pub/@province
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+-   name: /pub/@city
+    request:
+        headers:
+            Authorization: ZHAO 3xWJrf4kXLptT8InqiF:Bi6D3ZAjRTnxFBBAU33P6eq8VpI=
+            Content-Type: application/json
+            User-Agent: okhttp/3.12.0
+            X-Zhao-AppId: fKhnk3UwbjhLP5NuFNQm5W
+            X-Zhao-DeviceId: e23f36a7df5a663a
+            X-Zhao-OSInfo: '{"os":"android","osv":"6.0.1","deviceToken":"","appVer":"4.3","make":"Xiaomi","model":"Redmi
+                Note 3"}'
+            X-Zhao-UserId: '1000777'
+            charset: utf-8
+        method: GET
+        params:
+            provinceId: '56'
+        url: http://ft1.mobile.zhaoonline.com/pub/@city
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+-   name: /pub/@province
+    request:
+        headers:
+            Authorization: ZHAO 3xWJrf4kXLptT8InqiF:C7PbvGXuV/Fdd67D4U+L52xKjGw=
+            Content-Type: application/json
+            User-Agent: okhttp/3.12.0
+            X-Zhao-AppId: fKhnk3UwbjhLP5NuFNQm5W
+            X-Zhao-DeviceId: e23f36a7df5a663a
+            X-Zhao-OSInfo: '{"os":"android","osv":"6.0.1","deviceToken":"","appVer":"4.3","make":"Xiaomi","model":"Redmi
+                Note 3"}'
+            X-Zhao-UserId: '1000777'
+            charset: utf-8
+        method: GET
+        params:
+            countryId: '40'
+        url: http://ft1.mobile.zhaoonline.com/pub/@province
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+-   name: /pub/@city
+    request:
+        headers:
+            Authorization: ZHAO 3xWJrf4kXLptT8InqiF:Bi6D3ZAjRTnxFBBAU33P6eq8VpI=
+            Content-Type: application/json
+            User-Agent: okhttp/3.12.0
+            X-Zhao-AppId: fKhnk3UwbjhLP5NuFNQm5W
+            X-Zhao-DeviceId: e23f36a7df5a663a
+            X-Zhao-OSInfo: '{"os":"android","osv":"6.0.1","deviceToken":"","appVer":"4.3","make":"Xiaomi","model":"Redmi
+                Note 3"}'
+            X-Zhao-UserId: '1000777'
+            charset: utf-8
+        method: GET
+        params:
+            provinceId: '56'
+        url: http://ft1.mobile.zhaoonline.com/pub/@city
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+-   name: /user/address
+    request:
+        headers:
+            Authorization: ZHAO 3xWJrf4kXLptT8InqiF:GrIhChdJtct6aIszfZ6Y2fFUMAM=
+            Content-Type: application/json;charset=UTF-8
+            User-Agent: okhttp/3.12.0
+            X-Zhao-AppId: fKhnk3UwbjhLP5NuFNQm5W
+            X-Zhao-DeviceId: e23f36a7df5a663a
+            X-Zhao-OSInfo: '{"os":"android","osv":"6.0.1","deviceToken":"","appVer":"4.3","make":"Xiaomi","model":"Redmi
+                Note 3"}'
+            X-Zhao-UserId: '1000777'
+            charset: utf-8
+        json:
+            address: 浦东新区217号
+            city_id: '45'
+            country_id: '40'
+            mobile: '13817462062'
+            postcode: '134679'
+            province_id: '56'
+            receiver: xialu-chao
+            user_id: ''
+        method: POST
+        url: http://ft1.user.zhaoonline.com/user/address
+    validate:
+    -   eq:
+        - status_code
+        - 201
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+-   name: /api/user/logistic/query
+    request:
+        headers:
+            Authorization: ZHAO 3xWJrf4kXLptT8InqiF:rrlvqRbkvEhTdyxaJ3wQ0qYXET4=
+            Content-Type: application/json
+            User-Agent: okhttp/3.12.0
+            X-Zhao-AppId: fKhnk3UwbjhLP5NuFNQm5W
+            X-Zhao-DeviceId: e23f36a7df5a663a
+            X-Zhao-OSInfo: '{"os":"android","osv":"6.0.1","deviceToken":"","appVer":"4.3","make":"Xiaomi","model":"Redmi
+                Note 3"}'
+            X-Zhao-UserId: '1000777'
+            charset: utf-8
+        method: GET
+        params:
+            auctionIds: '3827862'
+            bplusOrderIds: ''
+        url: http://ft1.mobile.zhaoonline.com/api/user/logistic/query
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+    -   eq:
+        - content.status
+        - SUCCESS
+    -   eq:
+        - content.detail
+        - 请求数据成功
+-   name: /user/3_3/order/query
+    request:
+        headers:
+            Authorization: ZHAO 3xWJrf4kXLptT8InqiF:rT12yF/cIUEKsy57m5vYIANVFVc=
+            Content-Type: application/json
+            User-Agent: okhttp/3.12.0
+            X-Zhao-AppId: fKhnk3UwbjhLP5NuFNQm5W
+            X-Zhao-DeviceId: e23f36a7df5a663a
+            X-Zhao-OSInfo: '{"os":"android","osv":"6.0.1","deviceToken":"","appVer":"4.3","make":"Xiaomi","model":"Redmi
+                Note 3"}'
+            X-Zhao-UserId: '1000777'
+            charset: utf-8
+        method: GET
+        params:
+            orderIds: '3422177'
+            queryMall: 'true'
+        url: http://ft1.mobile.zhaoonline.com/user/3_3/order/query
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+    -   eq:
+        - content.status
+        - SUCCESS
+    -   eq:
+        - content.detail
+        - 请求数据成功
+-   name: /user/3_3/pay/getUserCoupons
+    request:
+        headers:
+            Authorization: ZHAO 3xWJrf4kXLptT8InqiF:2LaEX3DWekC7Ajthbe91V5HlzKU=
+            Content-Type: application/json
+            User-Agent: okhttp/3.12.0
+            X-Zhao-AppId: fKhnk3UwbjhLP5NuFNQm5W
+            X-Zhao-DeviceId: e23f36a7df5a663a
+            X-Zhao-OSInfo: '{"os":"android","osv":"6.0.1","deviceToken":"","appVer":"4.3","make":"Xiaomi","model":"Redmi
+                Note 3"}'
+            X-Zhao-UserId: '1000777'
+            charset: utf-8
+        method: GET
+        params:
+            amoutMallMoney: '0.0'
+            orderIds: '3422177'
+            userId: '1000777'
+        url: http://ft1.mobile.zhaoonline.com/user/3_3/pay/getUserCoupons
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+    -   eq:
+        - content.status
+        - SUCCESS
+    -   eq:
+        - content.detail
+        - 请求数据成功
+-   name: /user/3_3/pay/waitPayStatistics
+    request:
+        headers:
+            Authorization: ZHAO 3xWJrf4kXLptT8InqiF:gXF45ozgWtkUg5zKAeSJOcBr5K0=
+            Content-Type: application/json
+            User-Agent: okhttp/3.12.0
+            X-Zhao-AppId: fKhnk3UwbjhLP5NuFNQm5W
+            X-Zhao-DeviceId: e23f36a7df5a663a
+            X-Zhao-OSInfo: '{"os":"android","osv":"6.0.1","deviceToken":"","appVer":"4.3","make":"Xiaomi","model":"Redmi
+                Note 3"}'
+            X-Zhao-UserId: '1000777'
+            charset: utf-8
+        method: GET
+        params:
+            amountCoupon: '0.0'
+            amountPay: '112.0'
+            auctionIds: '3827862'
+            consumeScore: '0'
+        url: http://ft1.mobile.zhaoonline.com/user/3_3/pay/waitPayStatistics
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+    -   eq:
+        - content.status
+        - SUCCESS
+    -   eq:
+        - content.detail
+        - 请求数据成功
+-   name: /user/3_3/pay/doPay
+    request:
+        headers:
+            Authorization: ZHAO 3xWJrf4kXLptT8InqiF:oKhTSJbUs3ZWEr1nwD/IVB/8Zrw=
+            Content-Type: application/json;charset=UTF-8
+            User-Agent: okhttp/3.12.0
+            X-Zhao-AppId: fKhnk3UwbjhLP5NuFNQm5W
+            X-Zhao-DeviceId: e23f36a7df5a663a
+            X-Zhao-OSInfo: '{"os":"android","osv":"6.0.1","deviceToken":"","appVer":"4.3","make":"Xiaomi","model":"Redmi
+                Note 3"}'
+            X-Zhao-UserId: '1000777'
+            charset: utf-8
+        json:
+            auctionSelected: '3422177'
+            bookingRemarks: ''
+            bookingStartAt: ''
+            bookingTime: PM
+            bplusLogisticsCost: 0
+            bplusSelected: ''
+            bplusSummary: 0
+            consumeScores: 0
+            couponIds: ''
+            couponMoney: 0
+            insuredFee: '0.00'
+            insuredPrice: 0
+            isDlay: 'no'
+            logisticType: '10185'
+            logisticsCost: 0
+            msgType: ''
+            password: '111111'
+            payMethod: APP
+            payType: BALANCE
+            payUse: ORDER
+            subSummary: 112
+            userAddressId: '114698'
+        method: POST
+        url: http://ft1.mobile.zhaoonline.com/user/3_3/pay/doPay
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+    -   eq:
+        - content.status
+        - SUCCESS
+    -   eq:
+        - content.detail
+        - 请求数据成功

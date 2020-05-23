@@ -1,0 +1,15 @@
+config:
+    name: zhaoonline login
+    base_url: ${ENV(base_url)}
+
+teststeps:
+    - name: login
+      api: api/login_api.yml
+    - name: WaitPay
+      api: api/WaitPay_api.yml
+    - name: GetAddress
+      api: api/Logisticquery_api.yml
+    - name: WaitPayStatstics
+      api: api/WaitPayStatistics_api.yml
+#    - name: DoPay
+#      api: api/DoPay_api.yml

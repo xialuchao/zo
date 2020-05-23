@@ -1,0 +1,24 @@
+
+name: /user/3_3/pay/waitPayStatistics api
+variables:
+    username: ${get_username()}
+request:
+    url: ${ENV(base_url)}/user/3_3/pay/waitPayStatistics
+    headers:
+        Authorization: ${ENV(Authorization)}
+        Content-Type: application/json
+        User-Agent: okhttp/3.12.0
+        X-Zhao-AppId: ${ENV(X-Zhao-AppId)}
+        X-Zhao-DeviceId: ${ENV(X-Zhao-DeviceId)}
+        X-Zhao-OSInfo: '{"os":"android","osv":"7.1.2","deviceToken":"1a0018970aed6e7f43e","appVer":"4.2.16.1","make":"Hisense","model":"HLTE200T"}'
+        X-Zhao-UserId: $username
+        X-Zhao-Test: $username
+        charset: utf-8
+    method: GET
+    params:
+        amountCoupon: '0.0'
+        amountPay: '112.0'
+        auctionIds: ${orderId}
+        consumeScore: '0'
+validate:
+-   eq: ["status_code",200]

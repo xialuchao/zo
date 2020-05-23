@@ -1,0 +1,9 @@
+config:
+    name: "pay flow"
+testcases:
+-
+    name: WaitPay
+    testcase: testcases/Payflow_testcase.yml
+    parameters:
+        username-password:
+            - ["1000777","admin123"]

@@ -1,0 +1,28 @@
+
+-   name: /api/user/quota
+    request:
+        headers:
+            Authorization: ZHAO 3xWJrf4kXLptT8InqiF:3K6fdaT+qSbDnc/QlK7+rUUF0Ak=
+            Content-Type: application/json
+            User-Agent: okhttp/3.12.0
+            X-Zhao-AppId: fKhnk3UwbjhLP5NuFNQm5W
+            X-Zhao-DeviceId: e23f36a7df5a663a
+            X-Zhao-OSInfo: '{"os":"android","osv":"6.0.1","deviceToken":"100d85590975d4b0259","appVer":"4.3","make":"Xiaomi","model":"Redmi
+                Note 3"}'
+            X-Zhao-UserId: '1000777'
+            charset: utf-8
+        method: GET
+        url: http://ft1.mobile.zhaoonline.com/api/user/quota
+    validate:
+    -   eq:
+        - status_code
+        - 200
+    -   eq:
+        - headers.Content-Type
+        - application/json;charset=UTF-8
+    -   eq:
+        - content.status
+        - SUCCESS
+    -   eq:
+        - content.detail
+        - 请求数据成功

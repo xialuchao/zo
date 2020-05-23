@@ -1,0 +1,13 @@
+config:
+    name: Mine all flow
+    base_url: ${ENV(base_url)}
+
+teststeps:
+    - name: WaitDeli
+      api: api/WaitDeli_api.yml
+    - name: Complete
+      api: api/Complete.yml
+    - name: index
+      api: api/user_index_api.yml
+    - name: Waiting
+      api: api/Waiting.yml
