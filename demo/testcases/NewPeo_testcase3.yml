@@ -1,0 +1,18 @@
+config:
+    name: 新人专区 关注一个藏品
+    base_url: ${ENV(base_url)}
+#    username: 1000010
+#variables:
+
+
+teststeps:
+    - name: 关注一个藏品
+      variables:
+          username: "1000010"
+          phone_ver: ${get_phone_ver($username)}
+      api: api/NewPeo_api.yml
+      validate:
+          - eq: [content.data.userNewbieInfo.mobile, $phone_ver]
+#      parameters:
+#        username:
+#            - ["1000010"]

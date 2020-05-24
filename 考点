@@ -1,0 +1,22 @@
+1.单例（懒汉，饿汉）
+GIL 全局锁
+2.迭代器（__iter__,__next__)
+    __iter__的返回值只要是个迭代器对象就可以，而迭代器对象最最最最重要的特征就是有__next__方法
+    当你用for  in  去操作 list的时候，list也是马上先调用__iter__方法，返回一个迭代器对象，然后一直循环执行__next__方法，除非__next__方法抛出这个经典的StopIteration()异常，不然它就会一直遍历下去，一个一个元素的访问
+    是否是可以迭代的        isinstance(obj,Iterable)
+    是否是迭代器          isinstance(obj,Iterator)
+
+3.yield
+4.@property
+    第一个@property将score变成了一个getter，同时允许创建@score.setter
+    如果不创建@score.setter则该属性将变成只读
+    虽然定义的属性为Student._score，但是实际调用为Student.score
+    class Student(object):
+        @property
+        def score(self):
+            return self._score
+        @score.setter
+        def score(self, value):
+            self._score=value
+5.@staticmethod可以将函数直接变成静态函数，即在没有实例的情况下仍然允许调用
+6.@classmethod将函数变成类函数
