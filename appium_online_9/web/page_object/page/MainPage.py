@@ -11,4 +11,4 @@ class MainPage(BasePage):
 
     def enterLoginPage(self):
         self.find(self._login_button).click()
-        return LoginPage(self.driver)
+        return LoginPage()

@@ -1,4 +1,5 @@
-from selenium.webdriver.remote.webdriver import WebDriver
+# from selenium.webdriver.remote.webdriver import WebDriver
+from selenium import webdriver
 from web.page_object.driver.client import SeleniumDriver
 
 
@@ -8,12 +9,13 @@ class BasePage(object):
     # def __init__(self, driver):
         # self.driver:WebDriver = driver
     def __init__(self, driver):
-        self.driver:WebDriver = self.get_driver()
+        self.driver: webdriver = self.get_driver()
 
     @classmethod
     def get_driver(cls):
-        cls.driver = SeleniumDriver().init_selenium()
-        # return cls.driver
+        # cls.driver = SeleniumDriver()
+        cls.driver = SeleniumDriver.driver
+        return cls.driver
 
 
     def find(self, kv):

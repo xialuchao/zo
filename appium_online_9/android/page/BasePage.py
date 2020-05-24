@@ -1,8 +1,8 @@
 from appium.webdriver.webdriver import WebDriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webelement import WebElement
-
-from appium_online_9.page_object.driver.Client import AndroidClient
+from android.driver.Client import AndroidClient
+# from appium_online_9.page_object.driver.Client import AndroidClient
 import yaml
 import time
 import re
