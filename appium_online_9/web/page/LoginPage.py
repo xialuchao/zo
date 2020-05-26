@@ -19,8 +19,8 @@ class LoginPage(BasePage):
         self.find(self._loginButton).click()
         return self
 
-    def logout(self):
-        time.sleep(2)
-        self.find(self._logout).click()
-        # self.findByText("退出").click()
+    # def logout(self):
+    #     time.sleep(2)
+    #     self.find(self._logout).click()
+    #     # self.findByText("退出").click()
 
