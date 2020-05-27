@@ -67,3 +67,7 @@ firefox po          https://github.com/mozilla/PyPOM/tree/master/src/pypom
 
 @pytest.mark.parametrize() 传参的参数化
 
+pytest在执行的时候，可能会出现importError（pytest .来执行目录下的pytest）
+import sys
+sys.path.append('./') #调试到需要调用模块的那一层
+
