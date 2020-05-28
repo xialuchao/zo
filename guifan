@@ -41,6 +41,16 @@ python --> chromedriver --> chrome
 远程
 python --> selenium server --> chromedriver --> chrome
 
+selenium 分布式：
+1.代码机：java -jar selenium-server-standalone-3.141.59.jar -role hub
+2.节点机：java -jar selenium-server-standalone-3.141.59.jar -role node -port 5555 -hub http://localhost:4444/grid/register
+其中localhost就是代码机的ip
+3.通过网址查看链接代码机的情况http://localhost:4444/grid/console
+4.节点机的chromedriver需要配到环境变量中，不然会报 Only local connections are allowed
+启动：webdriver.Remote(command_executor='http://192.168.6.65:4567/wd/hub', desired_capabilities=DesiredCapabilities.CHROME)
+
+
+
 grid
 python --> grid hub(类似 STF) --> grid node  selenium server  -->  chromedriver --> chrome
 
@@ -70,4 +80,9 @@ firefox po          https://github.com/mozilla/PyPOM/tree/master/src/pypom
 pytest在执行的时候，可能会出现importError（pytest .来执行目录下的pytest）
 import sys
 sys.path.append('./') #调试到需要调用模块的那一层
+
+yaml.load 会报错YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe，使用loader参数就好了
+yaml.load(k, Loader=yaml.FullLoader)
+
+
 
