@@ -4,6 +4,7 @@ from selenium import webdriver
 import yaml
 from selenium.webdriver import DesiredCapabilities
 import threading
+from multiprocessing import Process
 
 
 # class SeleniumClient(object):
@@ -42,6 +43,7 @@ import threading
 #
 
 class SeleniumClient(object):
+    driver: webdriver
 
     def get_env(self):
         with open("../data/get_driver.yaml") as f:
@@ -57,9 +59,19 @@ class SeleniumClient(object):
         except:
             return False
 
-    # driver:webdriver
+
     @classmethod
-    def install_app(cls, url):  # -> webdriver:
+    def install_app(cls):  # -> webdriver:
+        threads = []
+        for url in cls.get_env(cls)["drivers"]:
+            threads.append(threading.Thread(target=cls.create_drvier, args=(url,)))
+            # P = Process(target=cls.create_drvier, args=(url,))
+        for P in threads:
+            P.start()
+            P.join()
+
+    @classmethod
+    def create_drvier(cls,url):
         if not cls.driver_exists():
             # cls.driver = webdriver.Chrome("E:\\chromedriver_win32\\chromedriver.exe")
             remoteurl = ('http://%s/wd/hub') % url
@@ -68,10 +80,6 @@ class SeleniumClient(object):
         cls.driver.get("http://ft1.sh.zhaoonline.com")
         return cls.driver
 
-    def run(self):
-        threads = []
-        for url in self.get_env()["drivers"]:
-            threads.append(threading.Thread(target=self.install_app, args=(url)))
 
 
 

@@ -14,7 +14,7 @@ class TestBid(object):
     def setup_method(self):
         print("#"*30)
         time.sleep(2)
-        self.detailPage = self.mainPage.gotoDetailPage(3827650)
+        self.detailPage = self.mainPage.gotoDetailPage(3827666)
         print(self.detailPage)
 
     def test_bid(self):
