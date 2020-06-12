@@ -15,5 +15,8 @@ class MainPage(BasePage):
         self.enterWeb(auctionid)
         return DetailPage()
 
+    def quitBrowser(self):
+        self.quitBro()
+
 
 

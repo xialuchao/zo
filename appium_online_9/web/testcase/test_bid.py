@@ -2,6 +2,7 @@ import sys
 sys.path.append('./../../')
 
 from web.page.PC import PC
+from web.page.BasePage import BasePage
 import time
 import pytest
 
@@ -23,3 +24,6 @@ class TestBid(object):
     def teardown_method(self):
         self.mainPage.logout()
         # self.mainPage.gotoLoginPage().logout()
+
+    def teardown_class(self):
+        self.mainPage.quitBrowser()

@@ -10,9 +10,7 @@ import re
 
 class BasePage(object):
     _logout = (By.LINK_TEXT, "退出")
-    element_black=[
-        (By.XPATH, "ddd")
-    ]
+
     def __init__(self):
         self.driver=self.getDriver()
 
@@ -49,5 +47,8 @@ class BasePage(object):
     def logout(self):
         WebDriverWait(self.driver, 15).until(EC.visibility_of_element_located(self._logout))
         self.find(self._logout).click()
+
+    def quitBro(self):
+        self.driver.quit()
 
 
