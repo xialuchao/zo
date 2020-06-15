@@ -1,0 +1,62 @@
+1、list和arraylist的区别
+下面列出了Array和ArrayList的不同点：
+	Array可以包含基本类型和对象类型，ArrayList只能包含对象类型。
+	Array大小是固定的，ArrayList的大小是动态变化的。
+	ArrayList提供了更多的方法和特性，比如：addAll()，removeAll()，iterator()等等。
+	对于基本类型数据，集合使用自动装箱来减少编码工作量。但是，当处理固定大小的基本数据类型的时候，这种方式相对比较慢。
+	ArrayList可以算是Array的加强版，（对array有所取舍的加强）。
+另附分类比较：
+存储内容比较：
+	Array数组可以包含基本类型和对象类型，
+	ArrayList却只能包含对象类型。
+	但是需要注意的是：Array数组在存放的时候一定是同种类型的元素。ArrayList就不一定了，因为ArrayList可以存储Object。
+空间大小比较：
+	它的空间大小是固定的，空间不够时也不能再次申请，所以需要事前确定合适的空间大小。
+	ArrayList的空间是动态增长的，如果空间不够，它会创建一个空间比原空间大约0.5倍的新数组，然后将所有元素复制到新数组中，接着抛弃旧数组。而且，每次添加新的元素的时候都会检查内部数组的空间是否足够。（比较麻烦的地方）。
+附上arraylist扩充机制：
+	newCapacity=oldCapacity+(oldCapacity>>1)（注： >>1:右移1位，相当于除以2，例如10>>1 得到的就是5）但由于源码里（不再分析，这里简要略过）传过来的minCapcatiy的值是size+1，能够实现grow方法调用就肯定是(size+1)>elementData.length的情况，所以size就是初始最大容量或上一次扩容后达到的最大容量，所以才会进行扩容。因此，扩容后的大小应该是原来的1.5倍+1
+方法上的比较： 
+	ArrayList作为Array的增强版，当然是在方法上比Array更多样化，比如添加全部addAll()、删除全部removeAll()、返回迭代器iterator()等。
+适用场景： 
+	如果想要保存一些在整个程序运行期间都会存在而且不变的数据，我们可以将它们放进一个全局数组里，但是如果我们单纯只是想要以数组的形式保存数据，而不对数据进行增加等操作，只是方便我们进行查找的话，那么，我们就选择ArrayList。而且还有一个地方是必须知道的，就是如果我们需要对元素进行频繁的移动或删除，或者是处理的是超大量的数据，那么，使用ArrayList就真的不是一个好的选择，因为它的效率很低，使用数组进行这样的动作就很麻烦
+
+引申--HashMap和Hashtable
+HashMap和Hashtable都实现了Map接口，因此很多特性非常相似。但是，他们有以下不同点：
+	1、HashMap是非线程安全的，HashTable是线程安全的。
+	2、HashMap允许键和值是null，而Hashtable不允许键或者值是null。
+	3、因为线程安全的问题，HashMap效率比HashTable的要高。
+	4、Hashtable是同步的，而HashMap不是。因此，HashMap更适合于单线程环境，而Hashtable适合于多线程环境。
+	5、HashMap提供了可供应用迭代的键的集合，因此，HashMap是快速失败的。另一方面，Hashtable提供了对键的列举(Enumeration)。
+一般认为Hashtable是一个遗留的类。
+    一般现在不建议用HashTable, ①是HashTable是遗留类，内部实现很多没优化和冗余。②即使在多线程环境下，现在也有同步的ConcurrentHashMap替代，没有必要因为是多线程而用HashTable。
+
+引申--ArrayList和LinkedList
+ArrayList和LinkedList都实现了List接口，他们有以下的不同点：
+	ArrayList是基于索引的数据接口，它的底层是数组。它可以以O(1)时间复杂度对元素进行随机访问。与此对应，LinkedList是以元素列表的形式存储它的数据，每一个元素都和它的前一个和后一个元素链接在一起，在这种情况下，查找某个元素的时间复杂度是O(n)。
+	相对于ArrayList，LinkedList的插入，添加，删除操作速度更快，因为当元素被添加到集合任意位置的时候，不需要像数组那样重新计算大小或者是更新索引。
+	LinkedList比ArrayList更占内存，因为LinkedList为每一个节点存储了两个引用，一个指向前一个元素，一个指向下一个元素。
+也可以参考ArrayList vs. LinkedList。
+	1) 因为 Array 是基于索引 (index) 的数据结构，它使用索引在数组中搜索和读取数据是很快的。 Array 获取数据的时间复杂度是 O(1), 但是要删除数据却是开销很大的，因为这需要重排数组中的所有数据。
+	2) 相对于 ArrayList ， LinkedList 插入是更快的。因为 LinkedList 不像 ArrayList 一样，不需要改变数组的大小，也不需要在数组装满的时候要将所有的数据重新装入一个新的数组，这是 ArrayList 最坏的一种情况，时间复杂度是 O(n) ，而 LinkedList 中插入或删除的时间复杂度仅为 O(1) 。 ArrayList 在插入数据时还需要更新索引（除了插入数组的尾部）。
+	3) 类似于插入数据，删除数据时， LinkedList 也优于 ArrayList 。
+	4) LinkedList 需要更多的内存，因为 ArrayList 的每个索引的位置是实际的数据，而 LinkedList 中的每个节点中存储的是实际的数据和前后节点的位置 ( 一个 LinkedList 实例存储了两个值： Node<E> first 和 Node<E> last 分别表示链表的其实节点和尾节点，每个 Node 实例存储了三个值： E item,Node next,Node pre) 。
+什么场景下更适宜使用 LinkedList，而不用ArrayList
+	1) 你的应用不会随机访问数据 。因为如果你需要LinkedList中的第n个元素的时候，你需要从第一个元素顺序数到第n个数据，然后读取数据。
+	2) 你的应用更多的插入和删除元素，更少的读取数据 。因为插入和删除元素不涉及重排数据，所以它要比ArrayList要快。
+	换句话说，ArrayList的实现用的是数组，LinkedList是基于链表，ArrayList适合查找，LinkedList适合增删
+以上就是关于 ArrayList和LinkedList的差别。你需要一个不同步的基于索引的数据访问时，请尽量使用ArrayList。ArrayList很快，也很容易使用。但是要记得要给定一个合适的初始大小，尽可能的减少更改数组的大小。
+
+2、redis的实现原理
+
+3、sql语句的第三范式
+
+4、查询linux系统中文件中某个字符串出现的次数，用linux命令写出来
+grep -c  'object'   fileName
+zgrep -c  '要统计的字符串'   文件（压缩文件）
+：:%s/object/&/gn
+（&代表s// 搜索出来的内容
+g代表全局替换（而非仅仅当前行）
+n代表不执行，只是预览一下会有什么情况发生）
+5、jdbc的实现原理
+
+6、如何用python实现多进程
